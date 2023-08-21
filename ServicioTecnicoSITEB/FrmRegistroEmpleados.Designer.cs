@@ -106,10 +106,10 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.Red;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(444, 569);
+            this.btnEliminar.Location = new System.Drawing.Point(432, 569);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(160, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(184, 60);
             this.btnEliminar.TabIndex = 172;
             this.btnEliminar.Text = " Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -138,7 +138,7 @@
             this.BntCancelar.ForeColor = System.Drawing.Color.Red;
             this.BntCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BntCancelar.Image")));
             this.BntCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BntCancelar.Location = new System.Drawing.Point(625, 569);
+            this.BntCancelar.Location = new System.Drawing.Point(624, 569);
             this.BntCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.BntCancelar.Name = "BntCancelar";
             this.BntCancelar.Size = new System.Drawing.Size(179, 60);
