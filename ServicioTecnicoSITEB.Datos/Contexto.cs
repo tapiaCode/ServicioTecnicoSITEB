@@ -10,8 +10,8 @@ namespace ServicioTecnicoSITEB.Datos
     {
         public DBSITEPEntities TraerContexto()
         {
-            DBSITEPEntities AuxCont = new DBSITEPEntities();
-            return AuxCont;
+            DBSITEPEntities Esquema = new DBSITEPEntities();
+            return Esquema;
         }
     }
 }

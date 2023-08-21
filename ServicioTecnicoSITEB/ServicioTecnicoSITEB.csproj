@@ -98,9 +98,9 @@
       <Project>{83aa0e8b-d323-47f6-abe9-317852672294}</Project>
       <Name>ServicioTecnicoSITEB.Negocios</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Utilitarios\Utilitarios.csproj">
+    <ProjectReference Include="..\Utilitarios\RNUtilitarios.csproj">
       <Project>{36602ba3-a0a9-4687-b334-431a41719598}</Project>
-      <Name>Utilitarios</Name>
+      <Name>RNUtilitarios</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

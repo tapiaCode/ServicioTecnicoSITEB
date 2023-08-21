@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioTecnicoSITEB.Datos"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioTecnicoSITEB.Negocios", "ServicioTecnicoSITEB.Negocios\ServicioTecnicoSITEB.Negocios.csproj", "{83AA0E8B-D323-47F6-ABE9-317852672294}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilitarios", "Utilitarios\Utilitarios.csproj", "{36602BA3-A0A9-4687-B334-431A41719598}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNUtilitarios", "Utilitarios\RNUtilitarios.csproj", "{36602BA3-A0A9-4687-B334-431A41719598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
