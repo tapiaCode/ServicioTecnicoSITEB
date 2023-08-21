@@ -43,7 +43,7 @@ namespace ServicioTecnicoSITEB.Negocios
             try
             {
                 Empleado empleado = Esquema.Empleado.FirstOrDefault(a => a.Id_Empleado == objempleado.Id_Empleado);
-                Cargo cargo = Esquema.Cargo.FirstOrDefault(a => a.Id_Cargo == objempleado.Id_Empleado);
+                Cargo cargo = Esquema.Cargo.FirstOrDefault(b => b.Id_Cargo == objempleado.IdCargo);
 
                 if (empleado != null && cargo != null)
                 {
