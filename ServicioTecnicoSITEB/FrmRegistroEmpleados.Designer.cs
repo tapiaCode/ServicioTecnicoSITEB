@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroEmpleados));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnbuscar = new System.Windows.Forms.Button();
@@ -50,7 +51,9 @@
             this.txtApellidoMaterno = new System.Windows.Forms.TextBox();
             this.txtApellidoPaterno = new System.Windows.Forms.TextBox();
             this.txtNombreEmpleado = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -323,6 +326,10 @@
             this.txtNombreEmpleado.Size = new System.Drawing.Size(430, 35);
             this.txtNombreEmpleado.TabIndex = 155;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmRegistroEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -353,6 +360,7 @@
             this.Text = "Registro de Empleados";
             this.Load += new System.EventHandler(this.FrmRegistroEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,10 +376,6 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button BntCancelar;
         private System.Windows.Forms.Button BtnGuardar;
-        //private System.Windows.Forms.ErrorProvider errorNombreEmpleado;
-        //private System.Windows.Forms.ErrorProvider errorApellidoPaterno;
-        //private System.Windows.Forms.ErrorProvider errorApellidoMaterno;
-        //private System.Windows.Forms.ErrorProvider errorCarnetIdenditad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -385,6 +389,7 @@
         private System.Windows.Forms.TextBox txtApellidoMaterno;
         private System.Windows.Forms.TextBox txtApellidoPaterno;
         private System.Windows.Forms.TextBox txtNombreEmpleado;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

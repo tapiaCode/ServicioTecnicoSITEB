@@ -121,7 +121,7 @@
   <data name="btnbuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAU9JREFUSEvdlEtKA0EURePUD46CiegSxLgUxWEWET+zEHDoJOA63IP42YETQUwW
+        DAAACwwBP0AiyAAAAU9JREFUSEvdlEtKA0EURePUD46CiegSxLgUxWEWET+zEHDoJOA63IP42YETQUwW
         IDhT0Jne03RB8byxU8nMA4fkdXXdqrwq0vqXfM/ppVwIFxZ9rj8vZDExzNmRT/X34l8Sw5ywI18kddEi
         McyZYJGJ5Nnci8QwZ86uLFokhjkjLDKVbuwXMazURtykEhtxk5yvcih7ck2uyn3ZiAuLXssNuRAuMJfw
         FQnH8kF+1N7LI/knLjRJW9LOr6R7B8dyJm5Ckp4DO6f+lAPJX0dXntTPGDuUljwwmg6RtlATHjmVjN1V
@@ -232,4 +232,7 @@
         jDscIzdLuAmq0NdLbrRY3MVVPCA3p3iBm6CMZ5ygzr9KknwDyZP0iYNuY2cAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
