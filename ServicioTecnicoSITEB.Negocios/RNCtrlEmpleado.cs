@@ -68,12 +68,12 @@ namespace ServicioTecnicoSITEB.Negocios
             try
             {
                 Empleado ObjEmpleado = Esquema.Empleado.FirstOrDefault(a => a.Id_Empleado == empleado.Id_Empleado);
-                Cargo ObjCargo = Esquema.Cargo.FirstOrDefault(a => a.Id_Cargo == empleado.IdCargo);
+                //Cargo ObjCargo = Esquema.Cargo.FirstOrDefault(a => a.Id_Cargo == empleado.IdCargo);
 
-                if (ObjEmpleado != null && ObjCargo != null)
+                if (ObjEmpleado != null )
                 {
                     Esquema.Empleado.Remove(ObjEmpleado);
-                    Esquema.Cargo.Remove(ObjCargo);
+                    //Esquema.Cargo.Remove(ObjCargo);
 
                     return Esquema.SaveChanges() > 0;
                 }

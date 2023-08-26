@@ -60,32 +60,32 @@ namespace ServicioTecnicoSITEB
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            //BorrarErroProvider();
-            //if (ValidarCampo())
-            //{
-            RNCtrlEmpleado ObjRNCtrlEmpleado = new RNCtrlEmpleado();
-            Empleado ObjEmpleado = new Empleado();
-            ObjEmpleado.Id_Empleado = ObjRNCtrlEmpleado.GenerarId();
-            ObjEmpleado.Nombre_Empleado = this.txtNombreEmpleado.Text;
-            ObjEmpleado.Apellido_Paterno = this.txtApellidoPaterno.Text;
-            ObjEmpleado.Apellido_Materno = this.txtApellidoMaterno.Text;
-            ObjEmpleado.Carnet_Identidad = this.txtCI.Text;
-            ObjEmpleado.IdCargo = long.Parse(this.cbCargo.SelectedValue.ToString());
-            ObjEmpleado.Fecha_Nacimiento = DateTime.Parse(this.dpFechaNacimiento.Value.ToShortDateString());
-
-            RNUtilitarios.Utilitarios.id = ObjEmpleado.Id_Empleado;
-            LimpiarCuadrosTexto();
-            if (ObjRNCtrlEmpleado.InsertarEmpleado(ObjEmpleado))
+            BorrarErroProvider();
+            if (ValidarCampo())
             {
-                MessageBox.Show("Empleado Registrado con exito");
+                RNCtrlEmpleado ObjRNCtrlEmpleado = new RNCtrlEmpleado();
+                Empleado ObjEmpleado = new Empleado();
+                ObjEmpleado.Id_Empleado = ObjRNCtrlEmpleado.GenerarId();
+                ObjEmpleado.Nombre_Empleado = this.txtNombreEmpleado.Text;
+                ObjEmpleado.Apellido_Paterno = this.txtApellidoPaterno.Text;
+                ObjEmpleado.Apellido_Materno = this.txtApellidoMaterno.Text;
+                ObjEmpleado.Carnet_Identidad = this.txtCI.Text;
+                ObjEmpleado.IdCargo = long.Parse(this.cbCargo.SelectedValue.ToString());
+                ObjEmpleado.Fecha_Nacimiento = DateTime.Parse(this.dpFechaNacimiento.Value.ToShortDateString());
+
                 RNUtilitarios.Utilitarios.id = ObjEmpleado.Id_Empleado;
+                LimpiarCuadrosTexto();
+                if (ObjRNCtrlEmpleado.InsertarEmpleado(ObjEmpleado))
+                {
+                    MessageBox.Show("Empleado Registrado con exito");
+                    RNUtilitarios.Utilitarios.id = ObjEmpleado.Id_Empleado;
 
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo registrar al Empleado");
+                }
             }
-            else
-            {
-                MessageBox.Show("No se pudo registrar al Empleado");
-            }
-            //}
         }
 
         private void LimpiarCuadrosTexto()
@@ -181,39 +181,38 @@ namespace ServicioTecnicoSITEB
             }
         }
         //Validar campos
-        //private bool ValidarCampo()
-        //{
-        //    bool validar = true;
-        //    if (txtNombreEmpleado.Text == "")
-        //    {
-        //        validar = false;
-        //        errorNombreEmpleado.SetError(txtNombreEmpleado, "Ingrese el nombre del empleado");
-        //    }
-        //    if (txtApellidoPaterno.Text == "")
-        //    {
-        //        validar = false;
-        //        errorApellidoPaterno.SetError(txtApellidoPaterno, "Ingrese el apellido paterno del empleado");
-        //    }
-        //    if (txtApellidoMaterno.Text == "")
-        //    {
-        //        validar = false;
-        //        errorApellidoMaterno.SetError(txtApellidoMaterno, "Ingrese el apellido materno v");
-        //    }
-        //    if (txtCI.Text == "")
-        //    {
-        //        validar = false;
-        //        errorCarnetIdenditad.SetError(txtCI, "Ingrese su carnet de identidad");
-        //    }
-        //    return validar;
-        //}
-        //BorrarMensajesDeErro
-        //private void BorrarErroProvider()
-        //{
-        //    errorNombreEmpleado.SetError(txtNombreEmpleado, "");
-        //    errorApellidoPaterno.SetError(txtApellidoPaterno, "");
-        //    errorApellidoMaterno.SetError(txtApellidoMaterno, "");
-        //    errorCarnetIdenditad.SetError(txtCI, "");
-
-        //}
+        private bool ValidarCampo()
+        {
+            bool validar = true;
+            if (txtNombreEmpleado.Text == "")
+            {
+                validar = false;
+                errorProvider1.SetError(txtNombreEmpleado, "Ingrese el nombre del empleado");
+            }
+            if (txtApellidoPaterno.Text == "")
+            {
+                validar = false;
+                errorProvider1.SetError(txtApellidoPaterno, "Ingrese el apellido paterno del empleado");
+            }
+            if (txtApellidoMaterno.Text == "")
+            {
+                validar = false;
+                errorProvider1.SetError(txtApellidoMaterno, "Ingrese el apellido materno v");
+            }
+            if (txtCI.Text == "")
+            {
+                validar = false;
+                errorProvider1.SetError(txtCI, "Ingrese su carnet de identidad");
+            }
+            return validar;
+        }
+        //BorrarMensajesDeError
+        private void BorrarErroProvider()
+        {
+            errorProvider1.SetError(txtNombreEmpleado, "");
+            errorProvider1.SetError(txtApellidoPaterno, "");
+            errorProvider1.SetError(txtApellidoMaterno, "");
+            errorProvider1.SetError(txtCI, "");
+        }
     }
 }
