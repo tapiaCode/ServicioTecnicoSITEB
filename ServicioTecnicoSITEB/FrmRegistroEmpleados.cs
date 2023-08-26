@@ -60,8 +60,7 @@ namespace ServicioTecnicoSITEB
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            BorrarErroProvider();
-            if (ValidarCampo())
+            if (ValidarCampos())
             {
                 RNCtrlEmpleado ObjRNCtrlEmpleado = new RNCtrlEmpleado();
                 Empleado ObjEmpleado = new Empleado();
@@ -180,39 +179,28 @@ namespace ServicioTecnicoSITEB
                 MessageBox.Show("Seleccione una columna por favor.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        //Validar campos
-        private bool ValidarCampo()
+        private bool cleanCampo(TextBox campo, string mensajeError)
         {
-            bool validar = true;
-            if (txtNombreEmpleado.Text == "")
+            if (string.IsNullOrWhiteSpace(campo.Text))
             {
-                validar = false;
-                errorProvider1.SetError(txtNombreEmpleado, "Ingrese el nombre del empleado");
+                errorProvider1.SetError(campo, mensajeError);
+                return false;
             }
-            if (txtApellidoPaterno.Text == "")
-            {
-                validar = false;
-                errorProvider1.SetError(txtApellidoPaterno, "Ingrese el apellido paterno del empleado");
-            }
-            if (txtApellidoMaterno.Text == "")
-            {
-                validar = false;
-                errorProvider1.SetError(txtApellidoMaterno, "Ingrese el apellido materno v");
-            }
-            if (txtCI.Text == "")
-            {
-                validar = false;
-                errorProvider1.SetError(txtCI, "Ingrese su carnet de identidad");
-            }
-            return validar;
+
+            errorProvider1.SetError(campo, ""); // Borrar el mensaje de error si el campo está lleno
+            return true;
         }
-        //BorrarMensajesDeError
-        private void BorrarErroProvider()
+
+        private bool ValidarCampos()
         {
-            errorProvider1.SetError(txtNombreEmpleado, "");
-            errorProvider1.SetError(txtApellidoPaterno, "");
-            errorProvider1.SetError(txtApellidoMaterno, "");
-            errorProvider1.SetError(txtCI, "");
+            bool todosLosCamposValidos = true;
+
+            todosLosCamposValidos &= cleanCampo(txtNombreEmpleado, "Este Campo Es Requerido");
+            todosLosCamposValidos &= cleanCampo(txtApellidoPaterno, "Este Campo Es Requerido");
+            todosLosCamposValidos &= cleanCampo(txtApellidoMaterno, "Este Campo Es Requerido");
+            todosLosCamposValidos &= cleanCampo(txtCI, "Este Campo Es Requerido");
+
+            return todosLosCamposValidos;
         }
     }
 }
