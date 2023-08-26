@@ -45,7 +45,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(247, 61);
+            this.label1.Location = new System.Drawing.Point(256, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 38);
             this.label1.TabIndex = 0;
@@ -157,7 +157,7 @@
             this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
             this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(573, 291);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(536, 291);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(111, 38);
             this.btnCerrarSesion.TabIndex = 6;
@@ -177,7 +177,7 @@
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrar.Location = new System.Drawing.Point(668, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(631, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(16, 14);
             this.btnCerrar.TabIndex = 7;
@@ -195,7 +195,7 @@
             this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimizar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnMinimizar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMinimizar.Location = new System.Drawing.Point(631, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(594, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(16, 14);
             this.btnMinimizar.TabIndex = 8;
@@ -207,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
-            this.ClientSize = new System.Drawing.Size(706, 341);
+            this.ClientSize = new System.Drawing.Size(670, 341);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnCerrarSesion);
