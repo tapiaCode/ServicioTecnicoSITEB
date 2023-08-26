@@ -29,6 +29,7 @@ namespace ServicioTecnicoSITEB
 
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
+        //public string CargoEntreVentanas { get; set; }
 
         public FrmMenu()
         {
@@ -45,7 +46,74 @@ namespace ServicioTecnicoSITEB
 
         private void FrmMenu_Load(object sender, EventArgs e)
         {
+            //if (CargoEntreVentanas == "Administrador")
+            //{
+            //    //MessageBox.Show("Bienvenido Administrador");
+            //}
+            //else if (CargoEntreVentanas == "Empleado")
+            //{
+            //    btnRegistroEmpleado.Visible = false;
+            //    btnRegistroProducto.Visible = false;
+            //}
+        }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnRegistroProducto_Click(object sender, EventArgs e)
+        {
+            //FrmRegistroProducto frmRegistroProducto = new FrmRegistroProducto();
+            //this.Hide();
+            //frmRegistroProducto.ShowDialog();
+            //this.Close();
+        }
+
+        private void btnRegistroPedido_Click(object sender, EventArgs e)
+        {
+            //FrmRegistrarPedido frmFrmRegistrarPedido = new FrmRegistrarPedido();
+            //frmFrmRegistrarPedido.CargoEntreVentanas = CargoEntreVentanas;
+            //this.Hide();
+            //frmFrmRegistrarPedido.ShowDialog();
+            //this.Close();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            //FrmRegistroCliente frmRegistroCliente = new FrmRegistroCliente();
+            //frmRegistroCliente.CargoEntreVentanas = CargoEntreVentanas;
+            //this.Hide();
+            //frmRegistroCliente.ShowDialog();
+            //this.Close();
+        }
+
+        private void btnRegistroEmpleado_Click(object sender, EventArgs e)
+        {
+            FrmRegistroEmpleados frmRegistroEmpleado = new FrmRegistroEmpleados();
+            this.Hide();
+            frmRegistroEmpleado.ShowDialog();
+            this.Close();
+        }
+
+        private void btnRegistroUsuario_Click(object sender, EventArgs e)
+        {
+            //FrmCrearUsuario frmCrearUsuario = new FrmCrearUsuario();
+            //frmCrearUsuario.ShowDialog();
+            //this.Close();
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            //FrmInicioSesion frmInicioSesion = new FrmInicioSesion();
+            //this.Hide();
+            //frmInicioSesion.ShowDialog();
+            //this.Close();
         }
     }
 }
