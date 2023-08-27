@@ -42,8 +42,14 @@
             this.panelBarra = new System.Windows.Forms.Panel();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.SubmenuReportes = new System.Windows.Forms.Panel();
+            this.btnrptB = new System.Windows.Forms.Button();
+            this.btnrptA = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnrptC = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelBarra.SuspendLayout();
+            this.SubmenuReportes.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +73,7 @@
             this.btnClientes.ForeColor = System.Drawing.SystemColors.Control;
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 177);
+            this.btnClientes.Location = new System.Drawing.Point(12, 154);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(186, 38);
             this.btnClientes.TabIndex = 1;
@@ -86,7 +92,7 @@
             this.btnRegistroPedido.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegistroPedido.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroPedido.Image")));
             this.btnRegistroPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroPedido.Location = new System.Drawing.Point(11, 221);
+            this.btnRegistroPedido.Location = new System.Drawing.Point(23, 198);
             this.btnRegistroPedido.Name = "btnRegistroPedido";
             this.btnRegistroPedido.Size = new System.Drawing.Size(172, 38);
             this.btnRegistroPedido.TabIndex = 2;
@@ -105,7 +111,7 @@
             this.btnRegistroProducto.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegistroProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroProducto.Image")));
             this.btnRegistroProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroProducto.Location = new System.Drawing.Point(0, 274);
+            this.btnRegistroProducto.Location = new System.Drawing.Point(17, 251);
             this.btnRegistroProducto.Name = "btnRegistroProducto";
             this.btnRegistroProducto.Size = new System.Drawing.Size(195, 38);
             this.btnRegistroProducto.TabIndex = 3;
@@ -124,7 +130,7 @@
             this.btnRegistroEmpleado.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegistroEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroEmpleado.Image")));
             this.btnRegistroEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroEmpleado.Location = new System.Drawing.Point(0, 133);
+            this.btnRegistroEmpleado.Location = new System.Drawing.Point(12, 110);
             this.btnRegistroEmpleado.Name = "btnRegistroEmpleado";
             this.btnRegistroEmpleado.Size = new System.Drawing.Size(200, 38);
             this.btnRegistroEmpleado.TabIndex = 4;
@@ -143,7 +149,7 @@
             this.btnRegistroUsuario.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRegistroUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroUsuario.Image")));
             this.btnRegistroUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroUsuario.Location = new System.Drawing.Point(3, 328);
+            this.btnRegistroUsuario.Location = new System.Drawing.Point(15, 305);
             this.btnRegistroUsuario.Name = "btnRegistroUsuario";
             this.btnRegistroUsuario.Size = new System.Drawing.Size(186, 38);
             this.btnRegistroUsuario.TabIndex = 5;
@@ -163,7 +169,7 @@
             this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
             this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(34, 412);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(46, 507);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(111, 38);
             this.btnCerrarSesion.TabIndex = 6;
@@ -212,6 +218,8 @@
             // 
             this.panelMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelMenu.BackColor = System.Drawing.Color.DarkBlue;
+            this.panelMenu.Controls.Add(this.SubmenuReportes);
+            this.panelMenu.Controls.Add(this.btnReportes);
             this.panelMenu.Controls.Add(this.btnRegistroProducto);
             this.panelMenu.Controls.Add(this.btnRegistroPedido);
             this.panelMenu.Controls.Add(this.btnRegistroUsuario);
@@ -223,7 +231,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 43);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelMenu.Size = new System.Drawing.Size(220, 515);
+            this.panelMenu.Size = new System.Drawing.Size(220, 545);
             this.panelMenu.TabIndex = 9;
             // 
             // panelBarra
@@ -237,6 +245,7 @@
             this.panelBarra.Name = "panelBarra";
             this.panelBarra.Size = new System.Drawing.Size(950, 43);
             this.panelBarra.TabIndex = 10;
+            this.panelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MoverVentana);
             // 
             // panelContenido
             // 
@@ -244,7 +253,7 @@
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenido.Location = new System.Drawing.Point(220, 43);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(730, 515);
+            this.panelContenido.Size = new System.Drawing.Size(730, 545);
             this.panelContenido.TabIndex = 11;
             // 
             // label2
@@ -258,12 +267,91 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Logo";
             // 
+            // SubmenuReportes
+            // 
+            this.SubmenuReportes.BackColor = System.Drawing.Color.DarkBlue;
+            this.SubmenuReportes.Controls.Add(this.btnrptC);
+            this.SubmenuReportes.Controls.Add(this.btnrptB);
+            this.SubmenuReportes.Controls.Add(this.btnrptA);
+            this.SubmenuReportes.Location = new System.Drawing.Point(33, 387);
+            this.SubmenuReportes.Name = "SubmenuReportes";
+            this.SubmenuReportes.Size = new System.Drawing.Size(179, 100);
+            this.SubmenuReportes.TabIndex = 17;
+            this.SubmenuReportes.Visible = false;
+            // 
+            // btnrptB
+            // 
+            this.btnrptB.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnrptB.FlatAppearance.BorderSize = 0;
+            this.btnrptB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnrptB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrptB.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrptB.ForeColor = System.Drawing.Color.White;
+            this.btnrptB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrptB.Location = new System.Drawing.Point(3, 34);
+            this.btnrptB.Name = "btnrptB";
+            this.btnrptB.Size = new System.Drawing.Size(176, 28);
+            this.btnrptB.TabIndex = 18;
+            this.btnrptB.Text = "Reporte B";
+            this.btnrptB.UseVisualStyleBackColor = false;
+            // 
+            // btnrptA
+            // 
+            this.btnrptA.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnrptA.FlatAppearance.BorderSize = 0;
+            this.btnrptA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnrptA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrptA.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrptA.ForeColor = System.Drawing.Color.White;
+            this.btnrptA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrptA.Location = new System.Drawing.Point(3, 0);
+            this.btnrptA.Name = "btnrptA";
+            this.btnrptA.Size = new System.Drawing.Size(176, 28);
+            this.btnrptA.TabIndex = 16;
+            this.btnrptA.Text = "Reporte A";
+            this.btnrptA.UseVisualStyleBackColor = false;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
+            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportes.Location = new System.Drawing.Point(20, 349);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(137, 32);
+            this.btnReportes.TabIndex = 16;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnrptC
+            // 
+            this.btnrptC.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnrptC.FlatAppearance.BorderSize = 0;
+            this.btnrptC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnrptC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrptC.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrptC.ForeColor = System.Drawing.Color.White;
+            this.btnrptC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrptC.Location = new System.Drawing.Point(3, 68);
+            this.btnrptC.Name = "btnrptC";
+            this.btnrptC.Size = new System.Drawing.Size(176, 28);
+            this.btnrptC.TabIndex = 18;
+            this.btnrptC.Text = "Reporte C";
+            this.btnrptC.UseVisualStyleBackColor = false;
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(950, 558);
+            this.ClientSize = new System.Drawing.Size(950, 588);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelBarra);
@@ -276,6 +364,7 @@
             this.panelMenu.PerformLayout();
             this.panelBarra.ResumeLayout(false);
             this.panelBarra.PerformLayout();
+            this.SubmenuReportes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -295,5 +384,10 @@
         private System.Windows.Forms.Panel panelContenido;
         private System.Windows.Forms.Panel panelBarra;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel SubmenuReportes;
+        private System.Windows.Forms.Button btnrptB;
+        private System.Windows.Forms.Button btnrptA;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnrptC;
     }
 }

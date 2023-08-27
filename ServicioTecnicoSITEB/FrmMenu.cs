@@ -13,6 +13,8 @@ namespace ServicioTecnicoSITEB
 {
     public partial class FrmMenu : Form
     {
+        //para dar bordes a la ventana
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -114,6 +116,17 @@ namespace ServicioTecnicoSITEB
             //this.Hide();
             //frmInicioSesion.ShowDialog();
             //this.Close();
+        }
+
+        private void MoverVentana(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible=true;
         }
     }
 }
