@@ -34,29 +34,6 @@ namespace ServicioTecnicoSITEB
             cbCargo.ValueMember = "Id_Cargo";
         }
 
-        private void btnbuscar_Click(object sender, EventArgs e)
-        {
-            RNEmpleado objRNRubro = new RNEmpleado();
-            if (this.txtBuscar.Text == "")
-            {
-                this.dataGridView1.DataSource = (objRNRubro.TrearEmpleado(0));
-                Utilitarios.id = 0;
-
-                //Esconde columnas innecesarias
-                dataGridView1.Columns["Cargo"].Visible = false;
-            }
-            else
-            {
-                if (objRNRubro.TraerEmpleadoPorNombre(this.txtBuscar.Text).Count > 0)
-                {
-                    this.dataGridView1.DataSource = (objRNRubro.TraerEmpleadoPorNombre(this.txtBuscar.Text));
-
-                }
-
-                //Esconde columnas innecesarias
-                dataGridView1.Columns["Cargo"].Visible = false;
-            }
-        }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
@@ -201,6 +178,30 @@ namespace ServicioTecnicoSITEB
             todosLosCamposValidos &= cleanCampo(txtCI, "Este Campo Es Requerido");
 
             return todosLosCamposValidos;
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            RNEmpleado objRNRubro = new RNEmpleado();
+            if (this.txtBuscar.Text == "")
+            {
+                this.dataGridView1.DataSource = (objRNRubro.TrearEmpleado(0));
+                RNUtilitarios.Utilitarios.id = 0;
+
+                //Esconde columnas innecesarias
+                dataGridView1.Columns["Cargo"].Visible = false;
+            }
+            else
+            {
+                if (objRNRubro.TraerEmpleadoPorNombre(this.txtBuscar.Text).Count > 0)
+                {
+                    this.dataGridView1.DataSource = (objRNRubro.TraerEmpleadoPorNombre(this.txtBuscar.Text));
+
+                }
+
+                //Esconde columnas innecesarias
+                dataGridView1.Columns["Cargo"].Visible = false;
+            }
         }
     }
 }

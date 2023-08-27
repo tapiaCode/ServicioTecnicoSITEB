@@ -16,7 +16,7 @@ namespace ServicioTecnicoSITEB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRegistroEmpleados());
+            Application.Run(new FrmMainMenu());
         }
     }
 }
