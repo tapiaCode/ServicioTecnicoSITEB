@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RNCtrlCliente.cs" />
     <Compile Include="RNCtrlEmpleado.cs" />
     <Compile Include="RNEmpleado.cs" />
     <Compile Include="RNCargo.cs" />
