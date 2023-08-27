@@ -31,7 +31,7 @@ namespace ServicioTecnicoSITEB
 
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        //public string CargoEntreVentanas { get; set; }
+        public string CargoEntreVentanas { get; set; }
 
         public FrmMenu()
         {
