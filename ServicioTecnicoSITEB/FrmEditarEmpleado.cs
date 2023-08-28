@@ -43,7 +43,7 @@ namespace ServicioTecnicoSITEB
             cbCargo.ValueMember = "Id_Cargo";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnGuardar_Click(object sender, EventArgs e)
         {
             if (empleado != null)
             {
@@ -67,6 +67,14 @@ namespace ServicioTecnicoSITEB
                     MessageBox.Show("Error al intentar guardar los cambios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void BntCancelar_Click(object sender, EventArgs e)
+        {
+            FrmMainMenu frmMainMenu = new FrmMainMenu();
+            this.Hide();
+            frmMainMenu.ShowDialog();
+            this.Close(); //opcional
         }
     }
 }

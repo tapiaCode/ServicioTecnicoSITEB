@@ -46,7 +46,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(96)))), ((int)(((byte)(141)))));
             this.panelMenu.Controls.Add(this.btnInformes);
             this.panelMenu.Controls.Add(this.btnRegistroUsuario);
             this.panelMenu.Controls.Add(this.btnRegistroEmpleado);
@@ -66,7 +66,7 @@
             this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformes.Font = new System.Drawing.Font("Microsoft JhengHei", 10F, System.Drawing.FontStyle.Bold);
-            this.btnInformes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnInformes.ForeColor = System.Drawing.Color.White;
             this.btnInformes.Image = ((System.Drawing.Image)(resources.GetObject("btnInformes.Image")));
             this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInformes.Location = new System.Drawing.Point(0, 480);
@@ -84,7 +84,7 @@
             this.btnRegistroUsuario.FlatAppearance.BorderSize = 0;
             this.btnRegistroUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistroUsuario.Font = new System.Drawing.Font("Microsoft JhengHei", 10F, System.Drawing.FontStyle.Bold);
-            this.btnRegistroUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRegistroUsuario.ForeColor = System.Drawing.Color.White;
             this.btnRegistroUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroUsuario.Image")));
             this.btnRegistroUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistroUsuario.Location = new System.Drawing.Point(0, 400);
@@ -102,7 +102,7 @@
             this.btnRegistroEmpleado.FlatAppearance.BorderSize = 0;
             this.btnRegistroEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistroEmpleado.Font = new System.Drawing.Font("Microsoft JhengHei", 10F, System.Drawing.FontStyle.Bold);
-            this.btnRegistroEmpleado.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRegistroEmpleado.ForeColor = System.Drawing.Color.White;
             this.btnRegistroEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroEmpleado.Image")));
             this.btnRegistroEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistroEmpleado.Location = new System.Drawing.Point(0, 320);
@@ -120,7 +120,7 @@
             this.btnRegistroCliente.FlatAppearance.BorderSize = 0;
             this.btnRegistroCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistroCliente.Font = new System.Drawing.Font("Microsoft JhengHei", 10F, System.Drawing.FontStyle.Bold);
-            this.btnRegistroCliente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRegistroCliente.ForeColor = System.Drawing.Color.White;
             this.btnRegistroCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistroCliente.Image")));
             this.btnRegistroCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistroCliente.Location = new System.Drawing.Point(0, 240);
@@ -138,7 +138,7 @@
             this.btnProducto.FlatAppearance.BorderSize = 0;
             this.btnProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProducto.Font = new System.Drawing.Font("Microsoft JhengHei", 10F, System.Drawing.FontStyle.Bold);
-            this.btnProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProducto.ForeColor = System.Drawing.Color.White;
             this.btnProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnProducto.Image")));
             this.btnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducto.Location = new System.Drawing.Point(0, 160);
@@ -152,11 +152,12 @@
             // 
             // btnVentas
             // 
+            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(96)))), ((int)(((byte)(141)))));
             this.btnVentas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnVentas.FlatAppearance.BorderSize = 0;
             this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentas.Font = new System.Drawing.Font("Microsoft JhengHei Light", 10F, System.Drawing.FontStyle.Bold);
-            this.btnVentas.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVentas.ForeColor = System.Drawing.Color.White;
             this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
             this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVentas.Location = new System.Drawing.Point(0, 80);
@@ -165,12 +166,12 @@
             this.btnVentas.TabIndex = 0;
             this.btnVentas.Text = "   VENTAS";
             this.btnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.UseVisualStyleBackColor = false;
             this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // panelLogo
             // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(96)))), ((int)(((byte)(141)))));
             this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -181,7 +182,7 @@
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(96)))), ((int)(((byte)(141)))));
             this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(300, 0);
@@ -221,6 +222,7 @@
             this.Name = "FrmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMainMenu";
+            this.Load += new System.EventHandler(this.FrmMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
