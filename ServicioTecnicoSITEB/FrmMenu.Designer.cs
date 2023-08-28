@@ -39,17 +39,17 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelBarra = new System.Windows.Forms.Panel();
-            this.panelContenido = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.SubmenuReportes = new System.Windows.Forms.Panel();
+            this.btnrptC = new System.Windows.Forms.Button();
             this.btnrptB = new System.Windows.Forms.Button();
             this.btnrptA = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
-            this.btnrptC = new System.Windows.Forms.Button();
+            this.panelBarra = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelContenido = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
-            this.panelBarra.SuspendLayout();
             this.SubmenuReportes.SuspendLayout();
+            this.panelBarra.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -234,39 +234,6 @@
             this.panelMenu.Size = new System.Drawing.Size(220, 545);
             this.panelMenu.TabIndex = 9;
             // 
-            // panelBarra
-            // 
-            this.panelBarra.BackColor = System.Drawing.Color.DarkBlue;
-            this.panelBarra.Controls.Add(this.label2);
-            this.panelBarra.Controls.Add(this.btnCerrar);
-            this.panelBarra.Controls.Add(this.btnMinimizar);
-            this.panelBarra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBarra.Location = new System.Drawing.Point(0, 0);
-            this.panelBarra.Name = "panelBarra";
-            this.panelBarra.Size = new System.Drawing.Size(1050, 43);
-            this.panelBarra.TabIndex = 10;
-            this.panelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MoverVentana);
-            // 
-            // panelContenido
-            // 
-            this.panelContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenido.Location = new System.Drawing.Point(220, 43);
-            this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(830, 545);
-            this.panelContenido.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(41, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 26);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Logo";
-            // 
             // SubmenuReportes
             // 
             this.SubmenuReportes.BackColor = System.Drawing.Color.DarkBlue;
@@ -278,6 +245,22 @@
             this.SubmenuReportes.Size = new System.Drawing.Size(179, 100);
             this.SubmenuReportes.TabIndex = 17;
             this.SubmenuReportes.Visible = false;
+            // 
+            // btnrptC
+            // 
+            this.btnrptC.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnrptC.FlatAppearance.BorderSize = 0;
+            this.btnrptC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnrptC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrptC.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrptC.ForeColor = System.Drawing.Color.White;
+            this.btnrptC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrptC.Location = new System.Drawing.Point(3, 68);
+            this.btnrptC.Name = "btnrptC";
+            this.btnrptC.Size = new System.Drawing.Size(176, 28);
+            this.btnrptC.TabIndex = 18;
+            this.btnrptC.Text = "Reporte C";
+            this.btnrptC.UseVisualStyleBackColor = false;
             // 
             // btnrptB
             // 
@@ -308,8 +291,9 @@
             this.btnrptA.Name = "btnrptA";
             this.btnrptA.Size = new System.Drawing.Size(176, 28);
             this.btnrptA.TabIndex = 16;
-            this.btnrptA.Text = "Reporte A";
+            this.btnrptA.Text = "Reporte Cliente";
             this.btnrptA.UseVisualStyleBackColor = false;
+            this.btnrptA.Click += new System.EventHandler(this.btnrptA_Click);
             // 
             // btnReportes
             // 
@@ -330,21 +314,38 @@
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
-            // btnrptC
+            // panelBarra
             // 
-            this.btnrptC.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnrptC.FlatAppearance.BorderSize = 0;
-            this.btnrptC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btnrptC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrptC.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnrptC.ForeColor = System.Drawing.Color.White;
-            this.btnrptC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrptC.Location = new System.Drawing.Point(3, 68);
-            this.btnrptC.Name = "btnrptC";
-            this.btnrptC.Size = new System.Drawing.Size(176, 28);
-            this.btnrptC.TabIndex = 18;
-            this.btnrptC.Text = "Reporte C";
-            this.btnrptC.UseVisualStyleBackColor = false;
+            this.panelBarra.BackColor = System.Drawing.Color.DarkBlue;
+            this.panelBarra.Controls.Add(this.label2);
+            this.panelBarra.Controls.Add(this.btnCerrar);
+            this.panelBarra.Controls.Add(this.btnMinimizar);
+            this.panelBarra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBarra.Location = new System.Drawing.Point(0, 0);
+            this.panelBarra.Name = "panelBarra";
+            this.panelBarra.Size = new System.Drawing.Size(1050, 43);
+            this.panelBarra.TabIndex = 10;
+            this.panelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MoverVentana);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(41, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 26);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Logo";
+            // 
+            // panelContenido
+            // 
+            this.panelContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenido.Location = new System.Drawing.Point(220, 43);
+            this.panelContenido.Name = "panelContenido";
+            this.panelContenido.Size = new System.Drawing.Size(830, 545);
+            this.panelContenido.TabIndex = 11;
             // 
             // FrmMenu
             // 
@@ -362,9 +363,9 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
+            this.SubmenuReportes.ResumeLayout(false);
             this.panelBarra.ResumeLayout(false);
             this.panelBarra.PerformLayout();
-            this.SubmenuReportes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

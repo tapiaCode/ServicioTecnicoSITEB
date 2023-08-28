@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using ServicioTecnicoSITEB.Reportes;
 
 namespace ServicioTecnicoSITEB
 {
@@ -127,6 +128,17 @@ namespace ServicioTecnicoSITEB
         private void btnReportes_Click(object sender, EventArgs e)
         {
             SubmenuReportes.Visible=true;
+        }
+
+        private void btnrptA_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
+
+            FrmReporteCliente frmReporteCliente = new FrmReporteCliente();
+            //this.Hide();
+            frmReporteCliente.ShowDialog();
+            //this.Close();
+
         }
     }
 }
