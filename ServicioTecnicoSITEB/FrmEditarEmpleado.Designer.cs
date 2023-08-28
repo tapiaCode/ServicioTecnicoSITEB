@@ -260,6 +260,7 @@
             this.Controls.Add(this.txtApellidoPaterno);
             this.Controls.Add(this.txtNombreEmpleado);
             this.Name = "FrmEditarEmpleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edición de Empleado";
             this.Load += new System.EventHandler(this.FrmEditarEmpleado_Load);
             this.ResumeLayout(false);

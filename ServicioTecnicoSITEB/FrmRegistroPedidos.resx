@@ -121,7 +121,7 @@
   <data name="BntCancelar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAB5RJREFUaEPtl2tQVGUYgLemfpTsBip7X7TMmmmcqRkFh4VlpUUhbmaIWJSJcsma
+        vAAADrwBlbxySQAAB5RJREFUaEPtl2tQVGUYgLemfpTsBip7X7TMmmmcqRkFh4VlpUUhbmaIWJSJcsma
         ijJgrRBBQRYElssCokDkdJnJcvJHlpbU5DRqGIbhIhcVYbkUwg/Lxqnh7f3O7mHPAnvO7p4z/al35pn1
         17fP8/Gdb4+i/wenfptshSVTmdCQpVjvji/zVUmdFUHJnxtVyQd3qJLrM2eRodzckK5IdYclS74FvyOt
         Dv9dtz3wYcdX85uDmYrF9VmKr+szldMNWSpwx4+lS2GydRlMvbeM+hw//BBctSyFSxVL4IfiIDi5WwPH
@@ -156,10 +156,10 @@
         vv7fmYIC0d2dxbLIzhJp6s/75REdpQFBUGB/JfmPj0j0D2kNhcNttjR1AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="BtnGuardar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnContinuar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAABKZJREFUaEPtmW9sGmUcx0n0pWavfLFpNNFEk71xlcI4oDBNp1nmokZjljhjFv9M
+        vAAADrwBlbxySQAABKZJREFUaEPtmW9sGmUcx0n0pWavfLFpNNFEk71xlcI4oDBNp1nmokZjljhjFv9M
         bdQ3Zi7LjNH4ZsZuaVwdtNWVAa22qe2MnWa09s9aYawdpdBxx8qKQ9YKLRKpluLWn89z9wxKOa78Ofon
         4Zt8koZ76PP9cL+7a6gER6of2UKZ6Bpp/dCXjx//qRYzHZmvXVxcLBkTwVl2H8yOk5bjCjP9hqKNuZ8t
         lE8qmjzbKDPtU5oZqKwfgh1fdLPc/CsGiUSCZRr9fN59I4Pla/JlIjiX3OuJkz2A90cf4n8KE90iNbgf
@@ -182,4 +182,7 @@
         IpH8D8QlNqzHhmydAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

@@ -40,6 +40,7 @@
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(96)))), ((int)(((byte)(141)))));
+            this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.btnInformes);
             this.panelMenu.Controls.Add(this.btnRegistroUsuario);
             this.panelMenu.Controls.Add(this.btnRegistroEmpleado);
@@ -210,6 +212,22 @@
             this.panelDesktopPane.Size = new System.Drawing.Size(962, 593);
             this.panelDesktopPane.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 590);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(159, 80);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -243,5 +261,6 @@
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelDesktopPane;
+        private System.Windows.Forms.Button button1;
     }
 }
