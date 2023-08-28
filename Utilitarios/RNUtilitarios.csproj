@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ThemeColor.cs" />
     <Compile Include="Utilitarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

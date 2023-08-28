@@ -1,9 +1,11 @@
-﻿using System;
+﻿using ServicioTecnicoSITEB.Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,6 +30,43 @@ namespace ServicioTecnicoSITEB
             // Establecer color de fondo transparente
             int alpha = 255; // Ajusta este valor para la opacidad
             panel1.BackColor = Color.FromArgb(alpha, Color.LightBlue);
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = '*';
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string cargo = "";
+            string usuario = txtUser.Text;
+            string contraseña = txtPassword.Text;
+            using (var contexto = new DBSITEPEntities())
+            {
+                var usuarioBD = contexto.inicio_sesion.FirstOrDefault(u => u.usuario == usuario);
+                if (usuarioBD != null && usuarioBD.clave_acceso == BitConverter.ToString(SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(contraseña))).Replace("-", ""))
+                {
+                    cargo = usuarioBD.cargo;
+                    MessageBox.Show("Inicio de sesión exitoso, cargo: " + cargo);
+                    this.Hide();
+                    FrmMainMenu frmMainMenu = new FrmMainMenu();
+                    frmMainMenu.CargoEntreVentanas = cargo;
+                    frmMainMenu.ShowDialog();
+                    this.Close();
+
+                }
+                else
+                {
+                    txtPassword.Text = "";
+                    MessageBox.Show("Usuario o contraseña incorrectos"); //mejorar esto basic
+                }
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

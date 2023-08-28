@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Utilitarios;
 
 namespace ServicioTecnicoSITEB
 {
@@ -19,6 +18,7 @@ namespace ServicioTecnicoSITEB
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        public string CargoEntreVentanas { get; set; }
 
         //Constructor
         public FrmMainMenu()
@@ -36,17 +36,6 @@ namespace ServicioTecnicoSITEB
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         //Methods
-        private Color SelectThemeColor()
-        {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while (tempIndex == index)
-            {
-                index = random.Next(ThemeColor.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColor.ColorList[index];
-            return ColorTranslator.FromHtml(color);
-        }
         private void ActivateButton(object btnSender)
         {
             if (btnSender != null)
@@ -54,16 +43,9 @@ namespace ServicioTecnicoSITEB
                 if (currentButton != (Button)btnSender)
                 {
                     DisableButton();
-                    Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
+                    currentButton.BackColor = Color.FromArgb(2, 43, 64); ;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    panelTitleBar.BackColor = color;
-                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                    ThemeColor.PrimaryColor = color;
-                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
-                    //btnCloseChildForm.Visible = true;
                 }
             }
         }
@@ -73,9 +55,8 @@ namespace ServicioTecnicoSITEB
             {
                 if (previousBtn.GetType() == typeof(Button))
                 {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
-                    previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previousBtn.BackColor = Color.FromArgb(6, 96, 141);
+                    previousBtn.ForeColor = Color.White;
                 }
             }
         }
@@ -161,6 +142,18 @@ namespace ServicioTecnicoSITEB
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
+        private void FrmMainMenu_Load(object sender, EventArgs e)
+        {
+            if (CargoEntreVentanas == "Administrador")
+            {
+                MessageBox.Show("Bienvenido Administrador");
+            }
+            else if (CargoEntreVentanas == "Empleado")
+            {
+                btnRegistroCliente.Visible = false;
+                btnRegistroEmpleado.Visible = false;
+                btnRegistroUsuario.Visible = false;
+            }
+        }
     }
 }

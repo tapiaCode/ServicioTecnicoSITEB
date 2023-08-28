@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -62,15 +62,16 @@
             this.txtPassword.Size = new System.Drawing.Size(323, 34);
             this.txtPassword.TabIndex = 1;
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(101, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 53);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(101, 231);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(213, 53);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Ingresar";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // entityCommand1
             // 
@@ -89,7 +90,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtUser);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Location = new System.Drawing.Point(38, 181);
             this.panel1.Name = "panel1";
@@ -156,6 +157,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // FrmLogin
             // 
@@ -169,6 +171,7 @@
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Master Fixers (SITEB)";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -182,7 +185,7 @@
 
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
