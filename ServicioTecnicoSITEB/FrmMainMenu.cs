@@ -19,6 +19,7 @@ namespace ServicioTecnicoSITEB
         private int tempIndex;
         private Form activeForm;
         public string CargoEntreVentanas { get; set; }
+        public bool EditarEmpleado { get; set; }
 
         //Constructor
         public FrmMainMenu()
@@ -79,7 +80,7 @@ namespace ServicioTecnicoSITEB
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            //TODO
+            OpenChildForm(new FrmRegistroPedidos(), sender);
         }
 
         private void btnProducto_Click(object sender, EventArgs e)
@@ -96,6 +97,7 @@ namespace ServicioTecnicoSITEB
         {
             OpenChildForm(new FrmRegistroEmpleados(), sender);
         }
+
 
         private void btnRegistroUsuario_Click(object sender, EventArgs e)
         {
@@ -146,7 +148,7 @@ namespace ServicioTecnicoSITEB
         {
             if (CargoEntreVentanas == "Administrador")
             {
-                MessageBox.Show("Bienvenido Administrador");
+                //MessageBox.Show("Bienvenido Administrador");
             }
             else if (CargoEntreVentanas == "Empleado")
             {
@@ -154,6 +156,19 @@ namespace ServicioTecnicoSITEB
                 btnRegistroEmpleado.Visible = false;
                 btnRegistroUsuario.Visible = false;
             }
+
+            if (EditarEmpleado)
+            {
+                OpenChildForm(new FrmEditarEmpleado(), sender);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            this.Hide();
+            frmLogin.ShowDialog();
+            this.Close();
         }
     }
 }
