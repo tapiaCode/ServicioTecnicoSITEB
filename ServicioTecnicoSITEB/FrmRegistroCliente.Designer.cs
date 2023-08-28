@@ -94,6 +94,7 @@
             // BntCancelar
             // 
             this.BntCancelar.BackColor = System.Drawing.Color.White;
+            this.BntCancelar.FlatAppearance.BorderSize = 0;
             this.BntCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BntCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BntCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,6 +112,7 @@
             // BtnGuardar
             // 
             this.BtnGuardar.BackColor = System.Drawing.Color.White;
+            this.BtnGuardar.FlatAppearance.BorderSize = 0;
             this.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,6 +130,7 @@
             // txtIdCliente
             // 
             this.txtIdCliente.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtIdCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdCliente.Enabled = false;
             this.txtIdCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdCliente.Location = new System.Drawing.Point(706, 173);
@@ -167,6 +170,7 @@
             // 
             // txtEmailPersonal
             // 
+            this.txtEmailPersonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmailPersonal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailPersonal.Location = new System.Drawing.Point(245, 351);
             this.txtEmailPersonal.Margin = new System.Windows.Forms.Padding(2);
@@ -177,6 +181,7 @@
             // 
             // txtApellidoPaterno
             // 
+            this.txtApellidoPaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellidoPaterno.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoPaterno.Location = new System.Drawing.Point(246, 220);
             this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(2);
@@ -187,6 +192,7 @@
             // 
             // cbRubro
             // 
+            this.cbRubro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbRubro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRubro.FormattingEnabled = true;
             this.cbRubro.Location = new System.Drawing.Point(607, 216);
@@ -211,6 +217,7 @@
             // 
             // txtTelefonoFijo
             // 
+            this.txtTelefonoFijo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefonoFijo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoFijo.Location = new System.Drawing.Point(607, 305);
             this.txtTelefonoFijo.Margin = new System.Windows.Forms.Padding(2);
@@ -236,11 +243,12 @@
             // rbMaculino
             // 
             this.rbMaculino.AutoSize = true;
+            this.rbMaculino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbMaculino.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMaculino.Location = new System.Drawing.Point(244, 437);
             this.rbMaculino.Margin = new System.Windows.Forms.Padding(2);
             this.rbMaculino.Name = "rbMaculino";
-            this.rbMaculino.Size = new System.Drawing.Size(119, 26);
+            this.rbMaculino.Size = new System.Drawing.Size(118, 26);
             this.rbMaculino.TabIndex = 155;
             this.rbMaculino.TabStop = true;
             this.rbMaculino.Text = "Masculino";
@@ -263,11 +271,12 @@
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
+            this.rbFemenino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbFemenino.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFemenino.Location = new System.Drawing.Point(367, 437);
             this.rbFemenino.Margin = new System.Windows.Forms.Padding(2);
             this.rbFemenino.Name = "rbFemenino";
-            this.rbFemenino.Size = new System.Drawing.Size(116, 26);
+            this.rbFemenino.Size = new System.Drawing.Size(115, 26);
             this.rbFemenino.TabIndex = 156;
             this.rbFemenino.TabStop = true;
             this.rbFemenino.Text = "Femenino";
@@ -289,6 +298,7 @@
             // 
             // txtDocumentoIdentidad
             // 
+            this.txtDocumentoIdentidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDocumentoIdentidad.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumentoIdentidad.Location = new System.Drawing.Point(607, 260);
             this.txtDocumentoIdentidad.Margin = new System.Windows.Forms.Padding(2);
@@ -313,6 +323,7 @@
             // 
             // txtEmailCoorporativo
             // 
+            this.txtEmailCoorporativo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmailCoorporativo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailCoorporativo.Location = new System.Drawing.Point(245, 393);
             this.txtEmailCoorporativo.Margin = new System.Windows.Forms.Padding(2);
@@ -337,6 +348,7 @@
             // 
             // txtApellidoMaterno
             // 
+            this.txtApellidoMaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellidoMaterno.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoMaterno.Location = new System.Drawing.Point(246, 265);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(2);
@@ -347,6 +359,7 @@
             // 
             // txtTelefonoPersonal
             // 
+            this.txtTelefonoPersonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefonoPersonal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoPersonal.Location = new System.Drawing.Point(245, 310);
             this.txtTelefonoPersonal.Margin = new System.Windows.Forms.Padding(2);
@@ -357,6 +370,7 @@
             // 
             // cbZona
             // 
+            this.cbZona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbZona.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbZona.FormattingEnabled = true;
             this.cbZona.Location = new System.Drawing.Point(245, 469);
@@ -382,7 +396,7 @@
             // 
             // txtNombreCliente
             // 
-            this.txtNombreCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombreCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCliente.Location = new System.Drawing.Point(245, 174);
             this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2);
