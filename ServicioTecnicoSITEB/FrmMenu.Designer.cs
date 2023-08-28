@@ -243,7 +243,7 @@
             this.panelBarra.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarra.Location = new System.Drawing.Point(0, 0);
             this.panelBarra.Name = "panelBarra";
-            this.panelBarra.Size = new System.Drawing.Size(950, 43);
+            this.panelBarra.Size = new System.Drawing.Size(1050, 43);
             this.panelBarra.TabIndex = 10;
             this.panelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MoverVentana);
             // 
@@ -253,7 +253,7 @@
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenido.Location = new System.Drawing.Point(220, 43);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(730, 545);
+            this.panelContenido.Size = new System.Drawing.Size(830, 545);
             this.panelContenido.TabIndex = 11;
             // 
             // label2
@@ -351,7 +351,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(950, 588);
+            this.ClientSize = new System.Drawing.Size(1050, 588);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelBarra);

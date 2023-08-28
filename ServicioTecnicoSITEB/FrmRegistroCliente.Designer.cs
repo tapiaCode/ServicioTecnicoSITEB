@@ -85,7 +85,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(431, 215);
+            this.label6.Location = new System.Drawing.Point(502, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(203, 24);
             this.label6.TabIndex = 161;
@@ -100,7 +100,7 @@
             this.BntCancelar.ForeColor = System.Drawing.Color.Black;
             this.BntCancelar.Image = ((System.Drawing.Image)(resources.GetObject("BntCancelar.Image")));
             this.BntCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BntCancelar.Location = new System.Drawing.Point(561, 461);
+            this.BntCancelar.Location = new System.Drawing.Point(657, 441);
             this.BntCancelar.Name = "BntCancelar";
             this.BntCancelar.Size = new System.Drawing.Size(140, 36);
             this.BntCancelar.TabIndex = 175;
@@ -117,7 +117,7 @@
             this.BtnGuardar.ForeColor = System.Drawing.Color.Black;
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuardar.Location = new System.Drawing.Point(561, 401);
+            this.BtnGuardar.Location = new System.Drawing.Point(657, 381);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(140, 36);
             this.BtnGuardar.TabIndex = 163;
@@ -130,7 +130,7 @@
             this.txtIdCliente.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtIdCliente.Enabled = false;
             this.txtIdCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCliente.Location = new System.Drawing.Point(635, 215);
+            this.txtIdCliente.Location = new System.Drawing.Point(706, 173);
             this.txtIdCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdCliente.Multiline = true;
             this.txtIdCliente.Name = "txtIdCliente";
@@ -144,7 +144,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Image = ((System.Drawing.Image)(resources.GetObject("label12.Image")));
             this.label12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label12.Location = new System.Drawing.Point(27, 471);
+            this.label12.Location = new System.Drawing.Point(28, 393);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(212, 24);
             this.label12.TabIndex = 174;
@@ -158,7 +158,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(40, 172);
+            this.label1.Location = new System.Drawing.Point(41, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 24);
             this.label1.TabIndex = 165;
@@ -168,7 +168,7 @@
             // txtEmailPersonal
             // 
             this.txtEmailPersonal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailPersonal.Location = new System.Drawing.Point(244, 429);
+            this.txtEmailPersonal.Location = new System.Drawing.Point(245, 351);
             this.txtEmailPersonal.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailPersonal.Multiline = true;
             this.txtEmailPersonal.Name = "txtEmailPersonal";
@@ -178,7 +178,7 @@
             // txtApellidoPaterno
             // 
             this.txtApellidoPaterno.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoPaterno.Location = new System.Drawing.Point(245, 170);
+            this.txtApellidoPaterno.Location = new System.Drawing.Point(246, 220);
             this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellidoPaterno.Multiline = true;
             this.txtApellidoPaterno.Name = "txtApellidoPaterno";
@@ -189,7 +189,7 @@
             // 
             this.cbRubro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRubro.FormattingEnabled = true;
-            this.cbRubro.Location = new System.Drawing.Point(536, 124);
+            this.cbRubro.Location = new System.Drawing.Point(607, 216);
             this.cbRubro.Margin = new System.Windows.Forms.Padding(2);
             this.cbRubro.Name = "cbRubro";
             this.cbRubro.Size = new System.Drawing.Size(165, 30);
@@ -202,7 +202,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(57, 431);
+            this.label10.Location = new System.Drawing.Point(58, 353);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(184, 24);
             this.label10.TabIndex = 173;
@@ -212,7 +212,7 @@
             // txtTelefonoFijo
             // 
             this.txtTelefonoFijo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoFijo.Location = new System.Drawing.Point(244, 385);
+            this.txtTelefonoFijo.Location = new System.Drawing.Point(607, 305);
             this.txtTelefonoFijo.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefonoFijo.Multiline = true;
             this.txtTelefonoFijo.Name = "txtTelefonoFijo";
@@ -226,7 +226,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(83, 391);
+            this.label9.Location = new System.Drawing.Point(446, 311);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(158, 24);
             this.label9.TabIndex = 172;
@@ -237,7 +237,7 @@
             // 
             this.rbMaculino.AutoSize = true;
             this.rbMaculino.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMaculino.Location = new System.Drawing.Point(244, 257);
+            this.rbMaculino.Location = new System.Drawing.Point(244, 437);
             this.rbMaculino.Margin = new System.Windows.Forms.Padding(2);
             this.rbMaculino.Name = "rbMaculino";
             this.rbMaculino.Size = new System.Drawing.Size(119, 26);
@@ -253,7 +253,7 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(34, 345);
+            this.label7.Location = new System.Drawing.Point(35, 311);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(205, 24);
             this.label7.TabIndex = 171;
@@ -264,7 +264,7 @@
             // 
             this.rbFemenino.AutoSize = true;
             this.rbFemenino.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFemenino.Location = new System.Drawing.Point(367, 257);
+            this.rbFemenino.Location = new System.Drawing.Point(367, 437);
             this.rbFemenino.Margin = new System.Windows.Forms.Padding(2);
             this.rbFemenino.Name = "rbFemenino";
             this.rbFemenino.Size = new System.Drawing.Size(116, 26);
@@ -280,7 +280,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(111, 252);
+            this.label5.Location = new System.Drawing.Point(111, 432);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 36);
             this.label5.TabIndex = 170;
@@ -290,7 +290,7 @@
             // txtDocumentoIdentidad
             // 
             this.txtDocumentoIdentidad.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDocumentoIdentidad.Location = new System.Drawing.Point(536, 168);
+            this.txtDocumentoIdentidad.Location = new System.Drawing.Point(607, 260);
             this.txtDocumentoIdentidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtDocumentoIdentidad.Multiline = true;
             this.txtDocumentoIdentidad.Name = "txtDocumentoIdentidad";
@@ -304,7 +304,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(143, 300);
+            this.label4.Location = new System.Drawing.Point(144, 471);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 24);
             this.label4.TabIndex = 169;
@@ -314,7 +314,7 @@
             // txtEmailCoorporativo
             // 
             this.txtEmailCoorporativo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailCoorporativo.Location = new System.Drawing.Point(244, 471);
+            this.txtEmailCoorporativo.Location = new System.Drawing.Point(245, 393);
             this.txtEmailCoorporativo.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailCoorporativo.Multiline = true;
             this.txtEmailCoorporativo.Name = "txtEmailCoorporativo";
@@ -328,7 +328,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(431, 126);
+            this.label3.Location = new System.Drawing.Point(502, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 168;
@@ -338,7 +338,7 @@
             // txtApellidoMaterno
             // 
             this.txtApellidoMaterno.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoMaterno.Location = new System.Drawing.Point(245, 215);
+            this.txtApellidoMaterno.Location = new System.Drawing.Point(246, 265);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellidoMaterno.Multiline = true;
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
@@ -348,7 +348,7 @@
             // txtTelefonoPersonal
             // 
             this.txtTelefonoPersonal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoPersonal.Location = new System.Drawing.Point(244, 344);
+            this.txtTelefonoPersonal.Location = new System.Drawing.Point(245, 310);
             this.txtTelefonoPersonal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefonoPersonal.Multiline = true;
             this.txtTelefonoPersonal.Name = "txtTelefonoPersonal";
@@ -359,7 +359,7 @@
             // 
             this.cbZona.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbZona.FormattingEnabled = true;
-            this.cbZona.Location = new System.Drawing.Point(244, 298);
+            this.cbZona.Location = new System.Drawing.Point(245, 469);
             this.cbZona.Margin = new System.Windows.Forms.Padding(2);
             this.cbZona.Name = "cbZona";
             this.cbZona.Size = new System.Drawing.Size(384, 30);
@@ -373,7 +373,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(456, 169);
+            this.label2.Location = new System.Drawing.Point(527, 261);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 24);
             this.label2.TabIndex = 167;
@@ -384,7 +384,7 @@
             // 
             this.txtNombreCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombreCliente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCliente.Location = new System.Drawing.Point(244, 124);
+            this.txtNombreCliente.Location = new System.Drawing.Point(245, 174);
             this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreCliente.Multiline = true;
             this.txtNombreCliente.Name = "txtNombreCliente";
@@ -398,7 +398,7 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Image = ((System.Drawing.Image)(resources.GetObject("label11.Image")));
             this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label11.Location = new System.Drawing.Point(33, 217);
+            this.label11.Location = new System.Drawing.Point(34, 267);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(206, 24);
             this.label11.TabIndex = 166;
@@ -414,10 +414,10 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(116, 123);
+            this.label8.Location = new System.Drawing.Point(117, 173);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label8.Size = new System.Drawing.Size(122, 29);
+            this.label8.Size = new System.Drawing.Size(125, 29);
             this.label8.TabIndex = 176;
             this.label8.Text = "Nombre:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -426,7 +426,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(227, 55);
+            this.label13.Location = new System.Drawing.Point(275, 66);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(284, 31);
             this.label13.TabIndex = 177;
@@ -483,7 +483,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(730, 545);
+            this.ClientSize = new System.Drawing.Size(830, 545);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
