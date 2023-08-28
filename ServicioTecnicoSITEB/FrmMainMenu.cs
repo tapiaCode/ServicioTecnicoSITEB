@@ -101,7 +101,7 @@ namespace ServicioTecnicoSITEB
 
         private void btnRegistroUsuario_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new FrmRegistroUsuario(), sender);
         }
 
         private void btnInformes_Click(object sender, EventArgs e)
@@ -157,10 +157,10 @@ namespace ServicioTecnicoSITEB
                 btnRegistroUsuario.Visible = false;
             }
 
-            if (EditarEmpleado)
-            {
-                OpenChildForm(new FrmEditarEmpleado(), sender);
-            }
+            //if (EditarEmpleado)
+            //{
+            //    OpenChildForm(new FrmEditarEmpleado(), sender);
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)

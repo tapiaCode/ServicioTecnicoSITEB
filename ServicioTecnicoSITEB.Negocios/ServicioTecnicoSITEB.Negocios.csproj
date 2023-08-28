@@ -63,6 +63,7 @@
     <Compile Include="RNPrecio.cs" />
     <Compile Include="RNProducto.cs" />
     <Compile Include="RNSubCategoria.cs" />
+    <Compile Include="RNUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServicioTecnicoSITEB.Datos\ServicioTecnicoSITEB.Datos.csproj">
