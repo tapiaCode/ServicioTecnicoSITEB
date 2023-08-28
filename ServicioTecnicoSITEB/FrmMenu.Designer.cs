@@ -189,7 +189,7 @@
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrar.Location = new System.Drawing.Point(890, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(975, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(16, 14);
             this.btnCerrar.TabIndex = 7;
@@ -207,7 +207,7 @@
             this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimizar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnMinimizar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMinimizar.Location = new System.Drawing.Point(853, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(938, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(16, 14);
             this.btnMinimizar.TabIndex = 8;

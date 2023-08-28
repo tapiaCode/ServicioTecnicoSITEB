@@ -51,9 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RNBarrio.cs" />
+    <Compile Include="RNCategoria.cs" />
+    <Compile Include="RNCrlProducto.cs" />
     <Compile Include="RNCtrlCliente.cs" />
     <Compile Include="RNCtrlEmpleado.cs" />
     <Compile Include="RNDepartamento.cs" />
+    <Compile Include="RNEjemplar.cs" />
     <Compile Include="RNEmpleado.cs" />
     <Compile Include="RNCargo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
