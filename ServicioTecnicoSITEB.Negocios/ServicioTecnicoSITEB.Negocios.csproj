@@ -60,7 +60,10 @@
     <Compile Include="RNEmpleado.cs" />
     <Compile Include="RNCargo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RNMarca.cs" />
+    <Compile Include="RNPrecio.cs" />
     <Compile Include="RNRubro.cs" />
+    <Compile Include="RNSubcategoria.cs" />
     <Compile Include="RNZona.cs" />
   </ItemGroup>
   <ItemGroup>
