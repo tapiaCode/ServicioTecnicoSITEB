@@ -344,7 +344,7 @@
             this.Controls.Add(this.txtNombreEmpleado);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmRegistroEmpleados";
-            this.Text = "Registro de Empleados";
+            this.Text = "REGISTRO DE EMPLEADO";
             this.Load += new System.EventHandler(this.FrmRegistroEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
