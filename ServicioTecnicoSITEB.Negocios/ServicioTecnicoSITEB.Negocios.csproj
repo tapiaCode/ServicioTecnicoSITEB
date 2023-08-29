@@ -50,20 +50,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="RNCategoria.cs" />
     <Compile Include="RNClienteViewModel.cs" />
     <Compile Include="RNControlDetallePedido.cs" />
     <Compile Include="RNControlPedido.cs" />
     <Compile Include="RNCtrlEmpleado.cs" />
+=======
+    <Compile Include="RNBarrio.cs" />
+    <Compile Include="RNCategoria.cs" />
+    <Compile Include="RNCrlProducto.cs" />
+    <Compile Include="RNCtrlCliente.cs" />
+    <Compile Include="RNCtrlEmpleado.cs" />
+    <Compile Include="RNDepartamento.cs" />
+>>>>>>> beimarCode
     <Compile Include="RNEjemplar.cs" />
     <Compile Include="RNEmpleado.cs" />
     <Compile Include="RNCargo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="RNPedido.cs" />
     <Compile Include="RNPrecio.cs" />
     <Compile Include="RNProducto.cs" />
     <Compile Include="RNSubCategoria.cs" />
     <Compile Include="RNUsuario.cs" />
+=======
+    <Compile Include="RNMarca.cs" />
+    <Compile Include="RNNatural.cs" />
+    <Compile Include="RNPrecio.cs" />
+    <Compile Include="RNRubro.cs" />
+    <Compile Include="RNSubcategoria.cs" />
+    <Compile Include="RNZona.cs" />
+>>>>>>> beimarCode
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServicioTecnicoSITEB.Datos\ServicioTecnicoSITEB.Datos.csproj">

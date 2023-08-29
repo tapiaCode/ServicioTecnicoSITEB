@@ -16,7 +16,11 @@ namespace ServicioTecnicoSITEB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new FrmLogin());
+=======
+            Application.Run(new FrmMenu());
+>>>>>>> beimarCode
         }
     }
 }
