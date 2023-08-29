@@ -531,7 +531,7 @@
             this.Controls.Add(this.dataGridViewClientes);
             this.Controls.Add(this.TextBuscarCliente);
             this.Name = "FrmRegistroPedidos";
-            this.Text = "FrmRegistroPedidos";
+            this.Text = "REGISTRAR VENTA";
             this.Load += new System.EventHandler(this.FrmRegistroPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

@@ -218,7 +218,7 @@
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmRegistroUsuario";
-            this.Text = "FrmRegistroUsuario";
+            this.Text = "REGISTRO DE USUARIO";
             this.Load += new System.EventHandler(this.FrmRegistroUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
