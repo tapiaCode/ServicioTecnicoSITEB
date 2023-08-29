@@ -11,4 +11,6 @@ namespace RNUtilitarios
         public static long id;
         public static Int32 TipodeReporte = 0;
     }
+
+    //tapiacode
 }
