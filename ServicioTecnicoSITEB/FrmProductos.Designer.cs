@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             this.CodigoProducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.FechaActualizacion = new System.Windows.Forms.DateTimePicker();
             this.txPrecio = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbSubCategoria = new System.Windows.Forms.ComboBox();
@@ -59,7 +60,9 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // CodigoProducto
@@ -105,6 +108,7 @@
             this.cbMarca.Name = "cbMarca";
             this.cbMarca.Size = new System.Drawing.Size(374, 33);
             this.cbMarca.TabIndex = 176;
+            this.cbMarca.SelectedIndexChanged += new System.EventHandler(this.cbMarca_SelectedIndexChanged);
             // 
             // DescripcionProducto
             // 
@@ -175,14 +179,14 @@
             this.label4.TabIndex = 182;
             this.label4.Text = "Descripción:";
             // 
-            // dateTimePicker1
+            // FechaActualizacion
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(792, 261);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(272, 34);
-            this.dateTimePicker1.TabIndex = 183;
+            this.FechaActualizacion.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
+            this.FechaActualizacion.Location = new System.Drawing.Point(792, 261);
+            this.FechaActualizacion.Margin = new System.Windows.Forms.Padding(4);
+            this.FechaActualizacion.Name = "FechaActualizacion";
+            this.FechaActualizacion.Size = new System.Drawing.Size(272, 34);
+            this.FechaActualizacion.TabIndex = 183;
             // 
             // txPrecio
             // 
@@ -226,6 +230,7 @@
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(272, 33);
             this.cbCategoria.TabIndex = 186;
+            this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbCategoria_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -347,6 +352,7 @@
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // dataGridView1
             // 
@@ -418,6 +424,10 @@
             this.label13.TabIndex = 202;
             this.label13.Text = "LISTA DE PRODUCTOS";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -442,7 +452,7 @@
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txPrecio);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.FechaActualizacion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -455,7 +465,9 @@
             this.Controls.Add(this.CodigoProducto);
             this.Name = "FrmProductos";
             this.Text = "GESTION DE PRODUCTOS";
+            this.Load += new System.EventHandler(this.FrmProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -473,7 +485,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker FechaActualizacion;
         private System.Windows.Forms.TextBox txPrecio;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbSubCategoria;
@@ -493,5 +505,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

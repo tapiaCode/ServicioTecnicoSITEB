@@ -55,10 +55,12 @@
     <Compile Include="RNControlDetallePedido.cs" />
     <Compile Include="RNControlPedido.cs" />
     <Compile Include="RNCtrlEmpleado.cs" />
+    <Compile Include="RNCtrlProducto.cs" />
     <Compile Include="RNEjemplar.cs" />
     <Compile Include="RNEmpleado.cs" />
     <Compile Include="RNCargo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RNMarca.cs" />
     <Compile Include="RNPedido.cs" />
     <Compile Include="RNPrecio.cs" />
     <Compile Include="RNProducto.cs" />
