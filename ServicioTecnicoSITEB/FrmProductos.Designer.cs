@@ -54,6 +54,12 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.BtnGuardar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // CodigoProducto
@@ -65,7 +71,7 @@
             this.CodigoProducto.Margin = new System.Windows.Forms.Padding(4);
             this.CodigoProducto.Multiline = true;
             this.CodigoProducto.Name = "CodigoProducto";
-            this.CodigoProducto.Size = new System.Drawing.Size(301, 36);
+            this.CodigoProducto.Size = new System.Drawing.Size(374, 36);
             this.CodigoProducto.TabIndex = 86;
             // 
             // label5
@@ -87,7 +93,7 @@
             this.cbDesMarca.Location = new System.Drawing.Point(193, 222);
             this.cbDesMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cbDesMarca.Name = "cbDesMarca";
-            this.cbDesMarca.Size = new System.Drawing.Size(301, 33);
+            this.cbDesMarca.Size = new System.Drawing.Size(374, 33);
             this.cbDesMarca.TabIndex = 177;
             // 
             // cbMarca
@@ -97,7 +103,7 @@
             this.cbMarca.Location = new System.Drawing.Point(193, 182);
             this.cbMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cbMarca.Name = "cbMarca";
-            this.cbMarca.Size = new System.Drawing.Size(301, 33);
+            this.cbMarca.Size = new System.Drawing.Size(374, 33);
             this.cbMarca.TabIndex = 176;
             // 
             // DescripcionProducto
@@ -107,7 +113,7 @@
             this.DescripcionProducto.Margin = new System.Windows.Forms.Padding(4);
             this.DescripcionProducto.Multiline = true;
             this.DescripcionProducto.Name = "DescripcionProducto";
-            this.DescripcionProducto.Size = new System.Drawing.Size(301, 77);
+            this.DescripcionProducto.Size = new System.Drawing.Size(374, 77);
             this.DescripcionProducto.TabIndex = 175;
             // 
             // label1
@@ -130,7 +136,7 @@
             this.txNombreProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txNombreProducto.Multiline = true;
             this.txNombreProducto.Name = "txNombreProducto";
-            this.txNombreProducto.Size = new System.Drawing.Size(301, 36);
+            this.txNombreProducto.Size = new System.Drawing.Size(374, 36);
             this.txNombreProducto.TabIndex = 179;
             // 
             // label2
@@ -186,7 +192,7 @@
             this.txPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txPrecio.Multiline = true;
             this.txPrecio.Name = "txPrecio";
-            this.txPrecio.Size = new System.Drawing.Size(301, 34);
+            this.txPrecio.Size = new System.Drawing.Size(374, 34);
             this.txPrecio.TabIndex = 184;
             // 
             // label6
@@ -226,7 +232,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(610, 62);
+            this.label7.Location = new System.Drawing.Point(600, 62);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 25);
@@ -238,7 +244,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(613, 20);
+            this.label8.Location = new System.Drawing.Point(603, 20);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(114, 25);
@@ -283,7 +289,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(613, 103);
+            this.label9.Location = new System.Drawing.Point(603, 103);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 25);
@@ -295,7 +301,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(613, 142);
+            this.label10.Location = new System.Drawing.Point(603, 142);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 25);
@@ -307,7 +313,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(613, 184);
+            this.label11.Location = new System.Drawing.Point(603, 184);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(134, 25);
@@ -319,7 +325,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(613, 268);
+            this.label12.Location = new System.Drawing.Point(603, 268);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(163, 25);
@@ -333,7 +339,7 @@
             this.BtnGuardar.ForeColor = System.Drawing.Color.Black;
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnGuardar.Location = new System.Drawing.Point(890, 571);
+            this.BtnGuardar.Location = new System.Drawing.Point(890, 581);
             this.BtnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(191, 60);
@@ -342,11 +348,86 @@
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuardar.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 379);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(824, 262);
+            this.dataGridView1.TabIndex = 198;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(890, 515);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(191, 60);
+            this.button1.TabIndex = 201;
+            this.button1.Text = "Imprimir";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.White;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.Location = new System.Drawing.Point(890, 447);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(191, 60);
+            this.btnEliminar.TabIndex = 200;
+            this.btnEliminar.Text = " Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.White;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditar.Location = new System.Drawing.Point(890, 379);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(191, 60);
+            this.btnEditar.TabIndex = 199;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(13, 338);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(236, 25);
+            this.label13.TabIndex = 202;
+            this.label13.Text = "LISTA DE PRODUCTOS";
+            // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 644);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -374,6 +455,7 @@
             this.Controls.Add(this.CodigoProducto);
             this.Name = "FrmProductos";
             this.Text = "GESTION DE PRODUCTOS";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,5 +488,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button BtnGuardar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Label label13;
     }
 }

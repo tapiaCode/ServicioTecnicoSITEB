@@ -61,7 +61,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(824, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(824, 319);
             this.dataGridView1.TabIndex = 175;
             // 
             // txtBuscar
@@ -93,7 +93,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(29, 579);
+            this.label4.Location = new System.Drawing.Point(29, 604);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 25);
@@ -107,7 +107,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(28, 539);
+            this.label2.Location = new System.Drawing.Point(28, 564);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(216, 25);
@@ -121,7 +121,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(28, 499);
+            this.label3.Location = new System.Drawing.Point(28, 524);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(226, 25);
@@ -135,7 +135,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(28, 424);
+            this.label9.Location = new System.Drawing.Point(28, 449);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(184, 25);
@@ -149,7 +149,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(28, 463);
+            this.label1.Location = new System.Drawing.Point(28, 488);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 25);
@@ -163,7 +163,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(28, 385);
+            this.label7.Location = new System.Drawing.Point(28, 410);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(205, 25);
@@ -174,7 +174,7 @@
             // 
             this.cbCargo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCargo.FormattingEnabled = true;
-            this.cbCargo.Location = new System.Drawing.Point(288, 578);
+            this.cbCargo.Location = new System.Drawing.Point(288, 603);
             this.cbCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCargo.Name = "cbCargo";
             this.cbCargo.Size = new System.Drawing.Size(562, 36);
@@ -183,7 +183,7 @@
             // dpFechaNacimiento
             // 
             this.dpFechaNacimiento.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
-            this.dpFechaNacimiento.Location = new System.Drawing.Point(288, 502);
+            this.dpFechaNacimiento.Location = new System.Drawing.Point(288, 527);
             this.dpFechaNacimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dpFechaNacimiento.Name = "dpFechaNacimiento";
             this.dpFechaNacimiento.Size = new System.Drawing.Size(562, 34);
@@ -193,7 +193,7 @@
             // 
             this.txtCI.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.txtCI.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtCI.Location = new System.Drawing.Point(288, 537);
+            this.txtCI.Location = new System.Drawing.Point(288, 562);
             this.txtCI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCI.Multiline = true;
             this.txtCI.Name = "txtCI";
@@ -204,7 +204,7 @@
             // 
             this.txtApellidoMaterno.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.txtApellidoMaterno.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtApellidoMaterno.Location = new System.Drawing.Point(288, 463);
+            this.txtApellidoMaterno.Location = new System.Drawing.Point(288, 488);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
             this.txtApellidoMaterno.Size = new System.Drawing.Size(562, 34);
@@ -214,7 +214,7 @@
             // 
             this.txtApellidoPaterno.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.txtApellidoPaterno.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtApellidoPaterno.Location = new System.Drawing.Point(288, 424);
+            this.txtApellidoPaterno.Location = new System.Drawing.Point(288, 449);
             this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtApellidoPaterno.Name = "txtApellidoPaterno";
             this.txtApellidoPaterno.Size = new System.Drawing.Size(562, 34);
@@ -225,7 +225,7 @@
             this.txtNombreEmpleado.BackColor = System.Drawing.Color.White;
             this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.txtNombreEmpleado.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(288, 385);
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(288, 410);
             this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
             this.txtNombreEmpleado.Size = new System.Drawing.Size(562, 34);
@@ -276,7 +276,7 @@
             this.BtnGuardar.ForeColor = System.Drawing.Color.Black;
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnGuardar.Location = new System.Drawing.Point(890, 554);
+            this.BtnGuardar.Location = new System.Drawing.Point(890, 579);
             this.BtnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(191, 60);

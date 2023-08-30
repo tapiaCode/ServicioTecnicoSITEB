@@ -41,6 +41,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             this.txtBuscar.Location = new System.Drawing.Point(137, 40);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(588, 34);
+            this.txtBuscar.Size = new System.Drawing.Size(745, 34);
             this.txtBuscar.TabIndex = 155;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -61,7 +62,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(698, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(855, 219);
             this.dataGridView1.TabIndex = 154;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
@@ -70,11 +71,11 @@
             this.TxtNombreUsuario.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.TxtNombreUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtNombreUsuario.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
-            this.TxtNombreUsuario.Location = new System.Drawing.Point(275, 346);
+            this.TxtNombreUsuario.Location = new System.Drawing.Point(268, 373);
             this.TxtNombreUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombreUsuario.Multiline = true;
             this.TxtNombreUsuario.Name = "TxtNombreUsuario";
-            this.TxtNombreUsuario.Size = new System.Drawing.Size(400, 34);
+            this.TxtNombreUsuario.Size = new System.Drawing.Size(614, 34);
             this.TxtNombreUsuario.TabIndex = 175;
             // 
             // TxtContraseña
@@ -82,11 +83,11 @@
             this.TxtContraseña.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TxtContraseña.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.TxtContraseña.ForeColor = System.Drawing.Color.Black;
-            this.TxtContraseña.Location = new System.Drawing.Point(275, 388);
+            this.TxtContraseña.Location = new System.Drawing.Point(268, 415);
             this.TxtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.TxtContraseña.Multiline = true;
             this.TxtContraseña.Name = "TxtContraseña";
-            this.TxtContraseña.Size = new System.Drawing.Size(400, 34);
+            this.TxtContraseña.Size = new System.Drawing.Size(614, 34);
             this.TxtContraseña.TabIndex = 176;
             // 
             // cbCargoUsuario
@@ -96,10 +97,10 @@
             this.cbCargoUsuario.Items.AddRange(new object[] {
             "Empleado\t",
             "Administrador"});
-            this.cbCargoUsuario.Location = new System.Drawing.Point(275, 430);
+            this.cbCargoUsuario.Location = new System.Drawing.Point(268, 457);
             this.cbCargoUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.cbCargoUsuario.Name = "cbCargoUsuario";
-            this.cbCargoUsuario.Size = new System.Drawing.Size(400, 33);
+            this.cbCargoUsuario.Size = new System.Drawing.Size(614, 33);
             this.cbCargoUsuario.TabIndex = 177;
             // 
             // label5
@@ -119,7 +120,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(37, 349);
+            this.label1.Location = new System.Drawing.Point(30, 376);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 25);
@@ -131,7 +132,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(37, 391);
+            this.label2.Location = new System.Drawing.Point(30, 418);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 25);
@@ -143,7 +144,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(37, 433);
+            this.label3.Location = new System.Drawing.Point(30, 460);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 25);
@@ -157,7 +158,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminar.Location = new System.Drawing.Point(733, 188);
+            this.btnEliminar.Location = new System.Drawing.Point(890, 159);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(191, 60);
@@ -174,7 +175,7 @@
             this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.Location = new System.Drawing.Point(733, 120);
+            this.btnEditar.Location = new System.Drawing.Point(890, 91);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(191, 60);
@@ -190,7 +191,7 @@
             this.BtnGuardar.ForeColor = System.Drawing.Color.Black;
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnGuardar.Location = new System.Drawing.Point(733, 473);
+            this.BtnGuardar.Location = new System.Drawing.Point(890, 580);
             this.BtnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(191, 60);
@@ -200,11 +201,28 @@
             this.BtnGuardar.UseVisualStyleBackColor = false;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(890, 227);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(191, 60);
+            this.button1.TabIndex = 184;
+            this.button1.Text = "Imprimir";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FrmRegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 546);
+            this.ClientSize = new System.Drawing.Size(1094, 644);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.BtnGuardar);
@@ -240,5 +258,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button BtnGuardar;
+        private System.Windows.Forms.Button button1;
     }
 }

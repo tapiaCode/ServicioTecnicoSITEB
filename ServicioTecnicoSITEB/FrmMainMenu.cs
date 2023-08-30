@@ -85,7 +85,7 @@ namespace ServicioTecnicoSITEB
 
         private void btnProducto_Click(object sender, EventArgs e)
         {
-            //TODO
+            OpenChildForm(new FrmProductos(), sender);
         }
 
         private void btnRegistroCliente_Click(object sender, EventArgs e)

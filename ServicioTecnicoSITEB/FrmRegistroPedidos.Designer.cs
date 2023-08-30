@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroPedidos));
             this.dataGridViewClientes = new System.Windows.Forms.DataGridView();
             this.TextBuscarCliente = new System.Windows.Forms.TextBox();
@@ -77,8 +77,8 @@
             this.dataGridViewClientes.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewClientes.Name = "dataGridViewClientes";
             this.dataGridViewClientes.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewClientes.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewClientes.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewClientes.Size = new System.Drawing.Size(908, 181);
             this.dataGridViewClientes.TabIndex = 141;
             this.dataGridViewClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientes_CellClick);
@@ -185,7 +185,7 @@
             this.cbPrecio.Enabled = false;
             this.cbPrecio.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.cbPrecio.FormattingEnabled = true;
-            this.cbPrecio.Location = new System.Drawing.Point(195, 499);
+            this.cbPrecio.Location = new System.Drawing.Point(195, 509);
             this.cbPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.cbPrecio.Name = "cbPrecio";
             this.cbPrecio.Size = new System.Drawing.Size(271, 33);
@@ -196,7 +196,7 @@
             this.dtFechaGarantia.CalendarTitleForeColor = System.Drawing.SystemColors.Highlight;
             this.dtFechaGarantia.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.dtFechaGarantia.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFechaGarantia.Location = new System.Drawing.Point(687, 461);
+            this.dtFechaGarantia.Location = new System.Drawing.Point(687, 471);
             this.dtFechaGarantia.Margin = new System.Windows.Forms.Padding(4);
             this.dtFechaGarantia.Name = "dtFechaGarantia";
             this.dtFechaGarantia.Size = new System.Drawing.Size(394, 34);
@@ -205,7 +205,7 @@
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(195, 540);
+            this.txtCantidad.Location = new System.Drawing.Point(195, 550);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(271, 35);
@@ -215,7 +215,7 @@
             // 
             this.cbSubCategoria.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.cbSubCategoria.FormattingEnabled = true;
-            this.cbSubCategoria.Location = new System.Drawing.Point(195, 376);
+            this.cbSubCategoria.Location = new System.Drawing.Point(195, 386);
             this.cbSubCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cbSubCategoria.Name = "cbSubCategoria";
             this.cbSubCategoria.Size = new System.Drawing.Size(271, 33);
@@ -226,7 +226,7 @@
             // 
             this.cbCategoria.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(195, 335);
+            this.cbCategoria.Location = new System.Drawing.Point(195, 345);
             this.cbCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(271, 33);
@@ -237,7 +237,7 @@
             // 
             this.cbProducto.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.cbProducto.FormattingEnabled = true;
-            this.cbProducto.Location = new System.Drawing.Point(195, 417);
+            this.cbProducto.Location = new System.Drawing.Point(195, 427);
             this.cbProducto.Margin = new System.Windows.Forms.Padding(4);
             this.cbProducto.Name = "cbProducto";
             this.cbProducto.Size = new System.Drawing.Size(271, 33);
@@ -248,7 +248,7 @@
             // 
             this.cbEjemplar.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.cbEjemplar.FormattingEnabled = true;
-            this.cbEjemplar.Location = new System.Drawing.Point(195, 458);
+            this.cbEjemplar.Location = new System.Drawing.Point(195, 468);
             this.cbEjemplar.Margin = new System.Windows.Forms.Padding(4);
             this.cbEjemplar.Name = "cbEjemplar";
             this.cbEjemplar.Size = new System.Drawing.Size(271, 33);
@@ -259,7 +259,7 @@
             // 
             this.dtFechaPedido.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.dtFechaPedido.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFechaPedido.Location = new System.Drawing.Point(195, 582);
+            this.dtFechaPedido.Location = new System.Drawing.Point(195, 592);
             this.dtFechaPedido.Margin = new System.Windows.Forms.Padding(4);
             this.dtFechaPedido.Name = "dtFechaPedido";
             this.dtFechaPedido.Size = new System.Drawing.Size(271, 34);
@@ -272,7 +272,7 @@
             this.cbModoDePago.Items.AddRange(new object[] {
             "Credito",
             "Al contado"});
-            this.cbModoDePago.Location = new System.Drawing.Point(687, 379);
+            this.cbModoDePago.Location = new System.Drawing.Point(687, 389);
             this.cbModoDePago.Margin = new System.Windows.Forms.Padding(4);
             this.cbModoDePago.Name = "cbModoDePago";
             this.cbModoDePago.Size = new System.Drawing.Size(394, 33);
@@ -282,7 +282,7 @@
             // 
             this.cbEmpleado.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.cbEmpleado.FormattingEnabled = true;
-            this.cbEmpleado.Location = new System.Drawing.Point(687, 420);
+            this.cbEmpleado.Location = new System.Drawing.Point(687, 430);
             this.cbEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.cbEmpleado.Name = "cbEmpleado";
             this.cbEmpleado.Size = new System.Drawing.Size(394, 33);
@@ -295,7 +295,7 @@
             this.cbEstadoPedido.Items.AddRange(new object[] {
             "Entregado",
             "Por entregar"});
-            this.cbEstadoPedido.Location = new System.Drawing.Point(687, 338);
+            this.cbEstadoPedido.Location = new System.Drawing.Point(687, 348);
             this.cbEstadoPedido.Margin = new System.Windows.Forms.Padding(4);
             this.cbEstadoPedido.Name = "cbEstadoPedido";
             this.cbEstadoPedido.Size = new System.Drawing.Size(394, 33);
@@ -308,7 +308,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(15, 589);
+            this.label3.Location = new System.Drawing.Point(15, 599);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 25);
@@ -322,7 +322,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(15, 341);
+            this.label4.Location = new System.Drawing.Point(15, 351);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 25);
@@ -336,7 +336,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(15, 382);
+            this.label6.Location = new System.Drawing.Point(15, 392);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(152, 25);
@@ -350,7 +350,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(15, 420);
+            this.label8.Location = new System.Drawing.Point(15, 430);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 25);
@@ -364,7 +364,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(15, 461);
+            this.label9.Location = new System.Drawing.Point(15, 471);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 25);
@@ -378,7 +378,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(15, 502);
+            this.label10.Location = new System.Drawing.Point(15, 512);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 25);
@@ -392,7 +392,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label11.Location = new System.Drawing.Point(15, 546);
+            this.label11.Location = new System.Drawing.Point(15, 556);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(107, 25);
@@ -406,7 +406,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label12.Location = new System.Drawing.Point(490, 468);
+            this.label12.Location = new System.Drawing.Point(490, 478);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(168, 25);
@@ -420,7 +420,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label13.Location = new System.Drawing.Point(494, 341);
+            this.label13.Location = new System.Drawing.Point(494, 351);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(84, 25);
@@ -434,7 +434,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label14.Location = new System.Drawing.Point(494, 382);
+            this.label14.Location = new System.Drawing.Point(494, 392);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(165, 25);
@@ -448,7 +448,7 @@
             this.label15.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label15.Location = new System.Drawing.Point(494, 423);
+            this.label15.Location = new System.Drawing.Point(494, 433);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(117, 25);
@@ -462,7 +462,7 @@
             this.BtnContinuar.ForeColor = System.Drawing.Color.Black;
             this.BtnContinuar.Image = ((System.Drawing.Image)(resources.GetObject("BtnContinuar.Image")));
             this.BtnContinuar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnContinuar.Location = new System.Drawing.Point(890, 571);
+            this.BtnContinuar.Location = new System.Drawing.Point(890, 581);
             this.BtnContinuar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnContinuar.Name = "BtnContinuar";
             this.BtnContinuar.Size = new System.Drawing.Size(191, 60);
@@ -483,7 +483,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(687, 571);
+            this.button1.Location = new System.Drawing.Point(687, 581);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 60);
