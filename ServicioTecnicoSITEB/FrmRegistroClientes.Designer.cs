@@ -378,6 +378,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(705, 34);
             this.txtBuscar.TabIndex = 177;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label5
             // 
@@ -398,7 +399,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(873, 513);
+            this.button1.Location = new System.Drawing.Point(872, 556);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 60);
@@ -415,7 +416,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminar.Location = new System.Drawing.Point(873, 445);
+            this.btnEliminar.Location = new System.Drawing.Point(872, 488);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(191, 60);
@@ -431,7 +432,7 @@
             this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.Location = new System.Drawing.Point(873, 377);
+            this.btnEditar.Location = new System.Drawing.Point(872, 420);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(191, 60);
@@ -447,7 +448,7 @@
             this.BtnGuardar.ForeColor = System.Drawing.Color.Black;
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnGuardar.Location = new System.Drawing.Point(873, 581);
+            this.BtnGuardar.Location = new System.Drawing.Point(840, 234);
             this.BtnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(191, 60);

@@ -180,5 +180,22 @@ namespace ServicioTecnicoSITEB
                 }
             }
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            RNProducto objRNProducto = new RNProducto();
+            if (this.txtBuscar.Text == "")
+            {
+                this.dataGridView1.DataSource = (objRNProducto.TraerProducto(0));
+                RNUtilitarios.Utilitarios.id = 0;
+            }
+            else
+            {
+                if (objRNProducto.TraerProductoPorNombre(this.txtBuscar.Text).Count > 0)
+                {
+                    this.dataGridView1.DataSource = (objRNProducto.TraerProductoPorNombre(this.txtBuscar.Text));
+                }
+            }
+        }
     }
 }

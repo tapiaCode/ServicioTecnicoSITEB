@@ -27,7 +27,6 @@ namespace ServicioTecnicoSITEB.Negocios
         }
         public List<Empleado> TraerEmpleadoPorNombre(string nombreEmpleado)
         {
-
             return (from e in Esquema.Empleado where e.Nombre_Empleado.ToUpper().StartsWith(nombreEmpleado.ToUpper()) select e).ToList();
         }
     }

@@ -41,5 +41,25 @@ namespace ServicioTecnicoSITEB.Negocios
             }
 
         }
+        public List<Natural> TrearClientes(Int64 id)
+        {
+            if (id == 0)
+            {
+                return (from e in Esquema.Natural select e).ToList();
+            }
+            else
+            {
+                return (from e in Esquema.Natural where e.Id_Natural.Equals(id) select e).ToList();
+            }
+        }
+
+        public List<Natural> TraerClientePorNombre(string nameCliente)
+        {
+            var result = Esquema.Natural.Where(
+                x => x.Nombre.ToUpper().StartsWith(nameCliente.ToUpper()) ||
+                x.Apellido_Paterno.ToUpper().StartsWith(nameCliente.ToUpper()) ||
+                x.Apellido_Materno.ToUpper().StartsWith(nameCliente.ToUpper())).ToList();
+            return result;
+        }
     }
 }

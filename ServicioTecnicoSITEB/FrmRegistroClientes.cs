@@ -172,5 +172,22 @@ namespace ServicioTecnicoSITEB
             //Reportes.FrmReportes frmReporteNatural = new Reportes.FrmReportes();
             //frmReporteNatural.Show();
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            RNCtrlCliente objRNCliente = new RNCtrlCliente();
+            if (this.txtBuscar.Text == "")
+            {
+                this.dataGridView1.DataSource = (objRNCliente.TrearClientes(0));
+                RNUtilitarios.Utilitarios.id = 0;
+            }
+            else
+            {
+                if (objRNCliente.TraerClientePorNombre(this.txtBuscar.Text).Count > 0)
+                {
+                    this.dataGridView1.DataSource = (objRNCliente.TraerClientePorNombre(this.txtBuscar.Text));
+                }
+            }
+        }
     }
 }

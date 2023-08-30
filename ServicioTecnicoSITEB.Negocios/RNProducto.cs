@@ -26,5 +26,11 @@ namespace ServicioTecnicoSITEB.Negocios
                 return (from e in Esquema.Producto where e.Id_Producto.Equals(id) select e).ToList();
             }
         }
+
+        public List<Producto> TraerProductoPorNombre(string nameProducto)
+        {
+            var result = Esquema.Producto.Where(x => x.Nombre_Producto.ToUpper().StartsWith(nameProducto.ToUpper())).ToList();
+            return result;
+        }
     }
 }
