@@ -50,12 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RNBarrio.cs" />
     <Compile Include="RNCategoria.cs" />
     <Compile Include="RNClienteViewModel.cs" />
     <Compile Include="RNControlDetallePedido.cs" />
     <Compile Include="RNControlPedido.cs" />
+    <Compile Include="RNCtrlCliente.cs" />
     <Compile Include="RNCtrlEmpleado.cs" />
     <Compile Include="RNCtrlProducto.cs" />
+    <Compile Include="RNDepartamento.cs" />
     <Compile Include="RNEjemplar.cs" />
     <Compile Include="RNEmpleado.cs" />
     <Compile Include="RNCargo.cs" />
@@ -64,8 +67,10 @@
     <Compile Include="RNPedido.cs" />
     <Compile Include="RNPrecio.cs" />
     <Compile Include="RNProducto.cs" />
+    <Compile Include="RNRubro.cs" />
     <Compile Include="RNSubCategoria.cs" />
     <Compile Include="RNUsuario.cs" />
+    <Compile Include="RNZona.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServicioTecnicoSITEB.Datos\ServicioTecnicoSITEB.Datos.csproj">

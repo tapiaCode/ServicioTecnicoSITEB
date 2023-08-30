@@ -66,11 +66,11 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
             this.txtBuscar.Location = new System.Drawing.Point(145, 26);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(705, 30);
+            this.txtBuscar.Size = new System.Drawing.Size(705, 34);
             this.txtBuscar.TabIndex = 174;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
@@ -172,17 +172,17 @@
             // 
             // cbCargo
             // 
-            this.cbCargo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCargo.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
             this.cbCargo.FormattingEnabled = true;
             this.cbCargo.Location = new System.Drawing.Point(288, 603);
             this.cbCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCargo.Name = "cbCargo";
-            this.cbCargo.Size = new System.Drawing.Size(562, 36);
+            this.cbCargo.Size = new System.Drawing.Size(562, 33);
             this.cbCargo.TabIndex = 160;
             // 
             // dpFechaNacimiento
             // 
-            this.dpFechaNacimiento.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.dpFechaNacimiento.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
             this.dpFechaNacimiento.Location = new System.Drawing.Point(288, 527);
             this.dpFechaNacimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dpFechaNacimiento.Name = "dpFechaNacimiento";
@@ -191,7 +191,7 @@
             // 
             // txtCI
             // 
-            this.txtCI.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.txtCI.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
             this.txtCI.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtCI.Location = new System.Drawing.Point(288, 562);
             this.txtCI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -202,7 +202,7 @@
             // 
             // txtApellidoMaterno
             // 
-            this.txtApellidoMaterno.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.txtApellidoMaterno.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
             this.txtApellidoMaterno.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtApellidoMaterno.Location = new System.Drawing.Point(288, 488);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -212,7 +212,7 @@
             // 
             // txtApellidoPaterno
             // 
-            this.txtApellidoPaterno.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.txtApellidoPaterno.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
             this.txtApellidoPaterno.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtApellidoPaterno.Location = new System.Drawing.Point(288, 449);
             this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -223,7 +223,7 @@
             // txtNombreEmpleado
             // 
             this.txtNombreEmpleado.BackColor = System.Drawing.Color.White;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft JhengHei Light", 12F);
             this.txtNombreEmpleado.ForeColor = System.Drawing.SystemColors.MenuText;
             this.txtNombreEmpleado.Location = new System.Drawing.Point(288, 410);
             this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

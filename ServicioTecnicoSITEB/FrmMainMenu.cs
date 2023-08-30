@@ -90,7 +90,7 @@ namespace ServicioTecnicoSITEB
 
         private void btnRegistroCliente_Click(object sender, EventArgs e)
         {
-            //TODO
+            OpenChildForm(new FrmRegistroClientes(), sender);
         }
 
         private void btnRegistroEmpleado_Click(object sender, EventArgs e)
