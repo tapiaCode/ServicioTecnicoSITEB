@@ -1,4 +1,5 @@
 ﻿using ServicioTecnicoSITEB.Datos;
+using ServicioTecnicoSITEB.Negocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,31 +40,53 @@ namespace ServicioTecnicoSITEB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string cargo = "";
-            string usuario = txtUser.Text;
-            string contraseña = txtPassword.Text;
-            using (var contexto = new DBSITEPEntities())
+            if (ValidarCampos())
             {
-                var usuarioBD = contexto.inicio_sesion.FirstOrDefault(u => u.usuario == usuario);
-                if (usuarioBD != null && usuarioBD.clave_acceso == BitConverter.ToString(SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(contraseña))).Replace("-", ""))
+                string cargo = "";
+                string usuario = txtUser.Text;
+                string contraseña = txtPassword.Text;
+                using (var contexto = new DBSITEPEntities())
                 {
-                    cargo = usuarioBD.cargo;
-                    MessageBox.Show("Inicio de sesión exitoso, cargo: " + cargo);
-                    this.Hide();
-                    FrmMainMenu frmMainMenu = new FrmMainMenu();
-                    frmMainMenu.CargoEntreVentanas = cargo;
-                    frmMainMenu.ShowDialog();
-                    this.Close();
+                    var usuarioBD = contexto.inicio_sesion.FirstOrDefault(u => u.usuario == usuario);
+                    if (usuarioBD != null && usuarioBD.clave_acceso == BitConverter.ToString(SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(contraseña))).Replace("-", ""))
+                    {
+                        cargo = usuarioBD.cargo;
+                        MessageBox.Show("Inicio de sesión exitoso, cargo: " + cargo);
+                        this.Hide();
+                        FrmMainMenu frmMainMenu = new FrmMainMenu();
+                        frmMainMenu.CargoEntreVentanas = cargo;
+                        frmMainMenu.ShowDialog();
+                        this.Close();
 
-                }
-                else
-                {
-                    txtPassword.Text = "";
-                    MessageBox.Show("Usuario o contraseña incorrectos"); //mejorar esto basic
+                    }
+                    else
+                    {
+                        txtPassword.Text = "";
+                        MessageBox.Show("Usuario o contraseña incorrectos"); //mejorar esto basic
+                    }
                 }
             }
         }
+        private bool cleanCampo(TextBox campo, string mensajeError)
+        {
+            if (string.IsNullOrWhiteSpace(campo.Text))
+            {
+                errorProvider1.SetError(campo, mensajeError);
+                return false;
+            }
 
+            errorProvider1.SetError(campo, ""); // Borrar el mensaje de error si el campo está lleno
+            return true;
+        }
+
+        private bool ValidarCampos()
+        {
+            bool todosLosCamposValidos = true;
+
+            todosLosCamposValidos &= cleanCampo(txtUser, "El Usuario es Obligatorio");
+            todosLosCamposValidos &= cleanCampo(txtPassword, "El Password es Obligatorio");
+            return todosLosCamposValidos;
+        }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 

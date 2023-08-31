@@ -578,10 +578,17 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ReporteCliente</DataSetName>
+<<<<<<< HEAD
         <Top>0.79058cm</Top>
         <Left>1.47849cm</Left>
         <Height>1.2cm</Height>
         <Width>17.43354cm</Width>
+=======
+        <Top>1.41083cm</Top>
+        <Left>2.15232cm</Left>
+        <Height>1.2cm</Height>
+        <Width>17.43353cm</Width>
+>>>>>>> tapiaCode
         <Style>
           <Border>
             <Style>None</Style>
@@ -589,6 +596,7 @@
         </Style>
       </Tablix>
     </ReportItems>
+<<<<<<< HEAD
     <Height>1.29167in</Height>
     <Style />
   </Body>
@@ -596,6 +604,15 @@
   <Page>
     <PageHeader>
       <Height>2.76641cm</Height>
+=======
+    <Height>1.51122in</Height>
+    <Style />
+  </Body>
+  <Width>8.55833in</Width>
+  <Page>
+    <PageHeader>
+      <Height>2.54cm</Height>
+>>>>>>> tapiaCode
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -619,8 +636,13 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox17</rd:DefaultName>
+<<<<<<< HEAD
           <Top>0.81703cm</Top>
           <Left>6.1087cm</Left>
+=======
+          <Top>0.45406cm</Top>
+          <Left>6.82959cm</Left>
+>>>>>>> tapiaCode
           <Height>0.94396cm</Height>
           <Width>7.55354cm</Width>
           <Style>
@@ -648,8 +670,13 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
+<<<<<<< HEAD
           <Top>1.84891cm</Top>
           <Left>15.70835cm</Left>
+=======
+          <Top>1.48594cm</Top>
+          <Left>15.84242cm</Left>
+>>>>>>> tapiaCode
           <Height>0.6cm</Height>
           <Width>3.65347cm</Width>
           <ZIndex>1</ZIndex>
@@ -678,8 +705,13 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox21</rd:DefaultName>
+<<<<<<< HEAD
           <Top>1.84891cm</Top>
           <Left>14.28433cm</Left>
+=======
+          <Top>1.48594cm</Top>
+          <Left>14.4184cm</Left>
+>>>>>>> tapiaCode
           <Height>0.6cm</Height>
           <Width>1.28292cm</Width>
           <ZIndex>2</ZIndex>
@@ -701,7 +733,11 @@
       </Style>
     </PageHeader>
     <PageFooter>
+<<<<<<< HEAD
       <Height>1.19063cm</Height>
+=======
+      <Height>0.97367cm</Height>
+>>>>>>> tapiaCode
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -722,8 +758,13 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox18</rd:DefaultName>
+<<<<<<< HEAD
           <Top>0.24694cm</Top>
           <Left>18.41025cm</Left>
+=======
+          <Top>0.17639cm</Top>
+          <Left>20.33147cm</Left>
+>>>>>>> tapiaCode
           <Height>0.6cm</Height>
           <Width>1.01833cm</Width>
           <Style>
@@ -751,8 +792,13 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox19</rd:DefaultName>
+<<<<<<< HEAD
           <Top>0.24694cm</Top>
           <Left>16.92448cm</Left>
+=======
+          <Top>0.17639cm</Top>
+          <Left>18.8457cm</Left>
+>>>>>>> tapiaCode
           <Height>0.6cm</Height>
           <Width>1.30938cm</Width>
           <ZIndex>1</ZIndex>
@@ -789,7 +835,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
+<<<<<<< HEAD
       <rd:DataSourceID>3d8c9f58-3bef-4671-9b72-fb7213aa524e</rd:DataSourceID>
+=======
+      <rd:DataSourceID>d2324cbb-e7fa-4da0-842c-c445677cc01a</rd:DataSourceID>
+>>>>>>> tapiaCode
     </DataSource>
   </DataSources>
   <DataSets>
@@ -850,7 +900,11 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Reportes</rd:DataSetName>
+<<<<<<< HEAD
         <rd:SchemaPath>E:\Sistema de informacion III\Proyect2\ServicioTecnicoSITEB\Reportes\Informes\Reportes.xsd</rd:SchemaPath>
+=======
+        <rd:SchemaPath>C:\dev\ServicioTecnicoSITEB\ServicioTecnicoSITEB\Reportes\Informes\Reportes.xsd</rd:SchemaPath>
+>>>>>>> tapiaCode
         <rd:TableName>GenerateClienteReport</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -859,5 +913,9 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
+<<<<<<< HEAD
   <rd:ReportID>bbe5f89f-c38b-40d8-8647-c1945a7733d4</rd:ReportID>
+=======
+  <rd:ReportID>774d0ed9-551c-4b1d-ae1e-46d16d355753</rd:ReportID>
+>>>>>>> tapiaCode
 </Report>

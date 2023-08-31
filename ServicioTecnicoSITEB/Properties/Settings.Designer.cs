@@ -12,7 +12,11 @@ namespace ServicioTecnicoSITEB.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.7.0.0")]
+=======
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.6.0.0")]
+>>>>>>> tapiaCode
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,7 +30,11 @@ namespace ServicioTecnicoSITEB.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+<<<<<<< HEAD
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JHON-CRUZ;Initial Catalog=DBSITEP;Integrated Security=True")]
+=======
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TAPIA-PC\\SQLEXPRESS;Initial Catalog=DBSITEP;Integrated Security=True")]
+>>>>>>> tapiaCode
         public string DBSITEPConnectionString {
             get {
                 return ((string)(this["DBSITEPConnectionString"]));

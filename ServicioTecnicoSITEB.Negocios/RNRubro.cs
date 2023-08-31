@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace ServicioTecnicoSITEB.Negocios
 {
+<<<<<<< HEAD
     public class RNRubro : Contexto
+=======
+    public class RNRubro:Contexto
+>>>>>>> tapiaCode
     {
         DBSITEPEntities Esquema;
 

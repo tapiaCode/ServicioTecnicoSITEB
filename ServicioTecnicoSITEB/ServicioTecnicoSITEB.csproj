@@ -108,6 +108,18 @@
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
 >>>>>>> beimarCode
     </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroClientes.Designer.cs">
+      <DependentUpon>FrmRegistroClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistroEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,13 +146,45 @@
       <DependentUpon>FrmRegistroProducto.cs</DependentUpon>
 >>>>>>> beimarCode
     </Compile>
+    <Compile Include="FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Reportes\FrmReporteCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\FrmReporteCliente.Designer.cs">
       <DependentUpon>FrmReporteCliente.cs</DependentUpon>
+=======
+    <Compile Include="Reportes\FrmRptCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptCliente.Designer.cs">
+      <DependentUpon>FrmRptCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptEmpleado.Designer.cs">
+      <DependentUpon>FrmRptEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptPedido.Designer.cs">
+      <DependentUpon>FrmRptPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptProducto.Designer.cs">
+      <DependentUpon>FrmRptProducto.cs</DependentUpon>
+>>>>>>> tapiaCode
     </Compile>
     <Compile Include="Reportes\Informes\Reportes.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -164,6 +208,12 @@
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
 >>>>>>> beimarCode
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroClientes.resx">
+      <DependentUpon>FrmRegistroClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroEmpleados.resx">
       <DependentUpon>FrmRegistroEmpleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +228,9 @@
       <DependentUpon>FrmRegistroProducto.cs</DependentUpon>
 >>>>>>> beimarCode
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -188,10 +241,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="Reportes\FrmReporteCliente.resx">
       <DependentUpon>FrmReporteCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Informes\ReporteCliente.rdlc" />
+=======
+    <EmbeddedResource Include="Reportes\FrmRptCliente.resx">
+      <DependentUpon>FrmRptCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptEmpleado.resx">
+      <DependentUpon>FrmRptEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptPedido.resx">
+      <DependentUpon>FrmRptPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptProducto.resx">
+      <DependentUpon>FrmRptProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Informes\ReporteCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReporteEmpleado.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReportePedido.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReporteProducto.rdlc" />
+>>>>>>> tapiaCode
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -235,6 +307,17 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reportes\Informes\Reportes.xsc">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Informes\Reportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reportes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Informes\Reportes.xss">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
     <None Include="Resources\3592855-business-man-employee-general-human-member-office-tie_107745.png" />
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +325,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Smaller Network Connection Background.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
