@@ -12,5 +12,5 @@ namespace RNUtilitarios
         public static Int32 TipodeReporte = 0;
     }
 
-    //elMaster
+    //tapiacode
 }

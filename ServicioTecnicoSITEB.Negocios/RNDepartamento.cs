@@ -7,23 +7,24 @@ using System.Threading.Tasks;
 
 namespace ServicioTecnicoSITEB.Negocios
 {
-    public class RNSubcategoria : Contexto
+    public class RNDepartamento : Contexto
     {
         DBSITEPEntities Esquema;
 
-        public RNSubcategoria()
+        public RNDepartamento()
         {
             Esquema = this.TraerContexto();
         }
-        public List<Sub_Categoria> TraerSubCategoria(Int64 id)
+
+        public List<Departamento> TraerDepartamento(Int64 id)
         {
             if (id == 0)
             {
-                return (from e in Esquema.Sub_Categoria select e).ToList();
+                return (from e in Esquema.Departamento select e).ToList();
             }
             else
             {
-                return (from e in Esquema.Sub_Categoria where e.Id_SubCategoria.Equals(id) select e).ToList();
+                return (from e in Esquema.Departamento where e.Id_Departamento.Equals(id) select e).ToList();
             }
         }
     }

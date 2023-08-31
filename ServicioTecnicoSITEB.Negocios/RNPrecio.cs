@@ -50,5 +50,9 @@ namespace ServicioTecnicoSITEB.Negocios
                 return false;
             }
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> beimarCode
     }
 }
