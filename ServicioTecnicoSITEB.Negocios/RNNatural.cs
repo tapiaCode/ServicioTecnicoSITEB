@@ -7,28 +7,22 @@ using System.Threading.Tasks;
 
 namespace ServicioTecnicoSITEB.Negocios
 {
-<<<<<<< HEAD
-    public class RNRubro : Contexto
-=======
-    public class RNRubro:Contexto
->>>>>>> tapiaCode
+    public class RNNatural : Contexto
     {
         DBSITEPEntities Esquema;
-
-        public RNRubro()
+        public RNNatural()
         {
             Esquema = this.TraerContexto();
         }
-
-        public List<Rubro> TraerRubro(Int64 id)
+        public List<Natural> TraerClienteNatural(Int64 id)
         {
             if (id == 0)
             {
-                return (from e in Esquema.Rubro select e).ToList();
+                return (from e in Esquema.Natural select e).ToList();
             }
             else
             {
-                return (from e in Esquema.Rubro where e.Id_Rubro.Equals(id) select e).ToList();
+                return (from e in Esquema.Natural where e.Id_Natural.Equals(id) select e).ToList();
             }
         }
     }

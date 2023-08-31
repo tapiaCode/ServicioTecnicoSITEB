@@ -24,6 +24,10 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class Reportes : global::System.Data.DataSet {
         
+<<<<<<< HEAD
+        private GenerateClienteReportDataTable tableGenerateClienteReport;
+        
+=======
         private ReporteProductosDataTable tableReporteProductos;
         
         private GenerarFacturaDataTable tableGenerarFactura;
@@ -38,6 +42,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         
         private ReporteEmpleadosDataTable tableReporteEmpleados;
         
+>>>>>>> tapiaCode
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -66,6 +71,11 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+<<<<<<< HEAD
+                if ((ds.Tables["GenerateClienteReport"] != null)) {
+                    base.Tables.Add(new GenerateClienteReportDataTable(ds.Tables["GenerateClienteReport"]));
+                }
+=======
                 if ((ds.Tables["ReporteProductos"] != null)) {
                     base.Tables.Add(new ReporteProductosDataTable(ds.Tables["ReporteProductos"]));
                 }
@@ -87,6 +97,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
                 if ((ds.Tables["ReporteEmpleados"] != null)) {
                     base.Tables.Add(new ReporteEmpleadosDataTable(ds.Tables["ReporteEmpleados"]));
                 }
+>>>>>>> tapiaCode
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -109,6 +120,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
+=======
         public ReporteProductosDataTable ReporteProductos {
             get {
                 return this.tableReporteProductos;
@@ -149,6 +162,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+>>>>>>> tapiaCode
         public GenerateClienteReportDataTable GenerateClienteReport {
             get {
                 return this.tableGenerateClienteReport;
@@ -157,6 +171,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< HEAD
+=======
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public GenerarInformeVentasGeneralesDataTable GenerarInformeVentasGenerales {
@@ -177,6 +193,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+>>>>>>> tapiaCode
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -242,6 +259,11 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
+<<<<<<< HEAD
+                if ((ds.Tables["GenerateClienteReport"] != null)) {
+                    base.Tables.Add(new GenerateClienteReportDataTable(ds.Tables["GenerateClienteReport"]));
+                }
+=======
                 if ((ds.Tables["ReporteProductos"] != null)) {
                     base.Tables.Add(new ReporteProductosDataTable(ds.Tables["ReporteProductos"]));
                 }
@@ -263,6 +285,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
                 if ((ds.Tables["ReporteEmpleados"] != null)) {
                     base.Tables.Add(new ReporteEmpleadosDataTable(ds.Tables["ReporteEmpleados"]));
                 }
+>>>>>>> tapiaCode
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -296,6 +319,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
+<<<<<<< HEAD
+=======
             this.tableReporteProductos = ((ReporteProductosDataTable)(base.Tables["ReporteProductos"]));
             if ((initTable == true)) {
                 if ((this.tableReporteProductos != null)) {
@@ -320,12 +345,15 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
                     this.tableGenerarInformeVentaPorPedido.InitVars();
                 }
             }
+>>>>>>> tapiaCode
             this.tableGenerateClienteReport = ((GenerateClienteReportDataTable)(base.Tables["GenerateClienteReport"]));
             if ((initTable == true)) {
                 if ((this.tableGenerateClienteReport != null)) {
                     this.tableGenerateClienteReport.InitVars();
                 }
             }
+<<<<<<< HEAD
+=======
             this.tableGenerarInformeVentasGenerales = ((GenerarInformeVentasGeneralesDataTable)(base.Tables["GenerarInformeVentasGenerales"]));
             if ((initTable == true)) {
                 if ((this.tableGenerarInformeVentasGenerales != null)) {
@@ -338,6 +366,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
                     this.tableReporteEmpleados.InitVars();
                 }
             }
+>>>>>>> tapiaCode
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -348,6 +377,10 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
             this.Namespace = "http://tempuri.org/Reportes.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+<<<<<<< HEAD
+            this.tableGenerateClienteReport = new GenerateClienteReportDataTable();
+            base.Tables.Add(this.tableGenerateClienteReport);
+=======
             this.tableReporteProductos = new ReporteProductosDataTable();
             base.Tables.Add(this.tableReporteProductos);
             this.tableGenerarFactura = new GenerarFacturaDataTable();
@@ -386,6 +419,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeGenerarInformeVentaPorPedido() {
             return false;
+>>>>>>> tapiaCode
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -396,6 +430,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< HEAD
+=======
         private bool ShouldSerializeGenerarInformeVentasGenerales() {
             return false;
         }
@@ -408,6 +444,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+>>>>>>> tapiaCode
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -462,6 +499,10 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+<<<<<<< HEAD
+        public delegate void GenerateClienteReportRowChangeEventHandler(object sender, GenerateClienteReportRowChangeEvent e);
+        
+=======
         public delegate void ReporteProductosRowChangeEventHandler(object sender, ReporteProductosRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1811,6 +1852,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
             }
         }
         
+>>>>>>> tapiaCode
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -2235,6 +2277,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         }
         
         /// <summary>
+<<<<<<< HEAD
+=======
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
@@ -3335,6 +3379,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         }
         
         /// <summary>
+>>>>>>> tapiaCode
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class GenerateClienteReportRow : global::System.Data.DataRow {
@@ -3678,6 +3723,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         }
         
         /// <summary>
+<<<<<<< HEAD
+=======
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class GenerarInformeVentasGeneralesRow : global::System.Data.DataRow {
@@ -3946,6 +3993,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
         }
         
         /// <summary>
+>>>>>>> tapiaCode
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -3978,6 +4026,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
                 }
             }
         }
+<<<<<<< HEAD
+=======
         
         /// <summary>
         ///Row event argument class
@@ -4046,6 +4096,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes {
                 }
             }
         }
+>>>>>>> tapiaCode
     }
 }
 namespace ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters {
@@ -4060,6 +4111,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
+=======
     public partial class ReporteProductosTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -4780,6 +4833,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+>>>>>>> tapiaCode
     public partial class GenerateClienteReportTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -4951,6 +5005,8 @@ namespace ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters {
     }
     
     /// <summary>
+<<<<<<< HEAD
+=======
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5291,6 +5347,7 @@ namespace ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters {
     }
     
     /// <summary>
+>>>>>>> tapiaCode
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]

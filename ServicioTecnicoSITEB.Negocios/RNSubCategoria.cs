@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace ServicioTecnicoSITEB.Negocios
 {
-    public class RNSubCategoria : Contexto
+    public class RNSubcategoria : Contexto
     {
         DBSITEPEntities Esquema;
 
-        public RNSubCategoria()
+        public RNSubcategoria()
         {
             Esquema = this.TraerContexto();
         }
