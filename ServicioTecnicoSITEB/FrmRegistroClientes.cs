@@ -168,7 +168,10 @@ namespace ServicioTecnicoSITEB
 
         private void button1_Click(object sender, EventArgs e)
         {
- 
+            Reportes.FrmRptCliente frmReporteCliente = new Reportes.FrmRptCliente();
+            //this.Hide();
+            frmReporteCliente.ShowDialog();
+            //this.Close();
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)

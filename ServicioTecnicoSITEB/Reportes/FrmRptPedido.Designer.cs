@@ -29,15 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.generarInformePedidosGeneralesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportes = new ServicioTecnicoSITEB.Reportes.Informes.Reportes();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.generarInformePedidosGeneralesTableAdapter = new ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters.GenerarInformePedidosGeneralesTableAdapter();
-            this.generarInformePedidosGeneralesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.generarInformePedidosGeneralesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.generarInformePedidosGeneralesBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // generarInformePedidosGeneralesBindingSource
@@ -53,9 +51,9 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "ReportePedidos";
-            reportDataSource1.Value = this.generarInformePedidosGeneralesBindingSource1;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "ReportePedidos";
+            reportDataSource2.Value = this.generarInformePedidosGeneralesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ServicioTecnicoSITEB.Reportes.Informes.ReportePedido.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -66,11 +64,6 @@
             // generarInformePedidosGeneralesTableAdapter
             // 
             this.generarInformePedidosGeneralesTableAdapter.ClearBeforeFill = true;
-            // 
-            // generarInformePedidosGeneralesBindingSource1
-            // 
-            this.generarInformePedidosGeneralesBindingSource1.DataMember = "GenerarInformePedidosGenerales";
-            this.generarInformePedidosGeneralesBindingSource1.DataSource = this.reportes;
             // 
             // FrmRptPedido
             // 
@@ -84,7 +77,6 @@
             this.Load += new System.EventHandler(this.FrmRptPedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.generarInformePedidosGeneralesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.generarInformePedidosGeneralesBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,6 +87,5 @@
         private Informes.Reportes reportes;
         private System.Windows.Forms.BindingSource generarInformePedidosGeneralesBindingSource;
         private Informes.ReportesTableAdapters.GenerarInformePedidosGeneralesTableAdapter generarInformePedidosGeneralesTableAdapter;
-        private System.Windows.Forms.BindingSource generarInformePedidosGeneralesBindingSource1;
     }
 }
