@@ -13,5 +13,6 @@ namespace ServicioTecnicoSITEB.Datos
             DBSITEPEntities Esquema = new DBSITEPEntities();
             return Esquema;
         }
+        //master
     }
 }
