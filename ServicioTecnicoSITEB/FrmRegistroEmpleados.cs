@@ -203,5 +203,11 @@ namespace ServicioTecnicoSITEB
                 dataGridView1.Columns["Cargo"].Visible = false;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Reportes.FrmRptEmpleado frmReporteEmpleado = new Reportes.FrmRptEmpleado();
+            frmReporteEmpleado.ShowDialog();
+        }
     }
 }
