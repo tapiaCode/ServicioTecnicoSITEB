@@ -200,8 +200,6 @@ namespace ServicioTecnicoSITEB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reportes.FrmRptProducto frmReporteProducto = new Reportes.FrmRptProducto();
-            frmReporteProducto.ShowDialog();
         }
     }
 }

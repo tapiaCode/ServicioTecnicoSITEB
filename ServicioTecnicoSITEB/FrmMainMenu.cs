@@ -106,7 +106,7 @@ namespace ServicioTecnicoSITEB
 
         private void btnInformes_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new FrmReportes(), sender);
         }
         private void btnCloseChildForm_Click(object sender, EventArgs e)
         {
