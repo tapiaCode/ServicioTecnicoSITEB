@@ -49,7 +49,7 @@ namespace ServicioTecnicoSITEB
             cbCategoria.DisplayMember = "Nombre_Categoria";
             cbCategoria.ValueMember = "Id_Categoria";
         }
-        
+
         private void CargarSubCategoria()
         {
             RNSubCategoria ObjRnSubCategoria = new RNSubCategoria();
