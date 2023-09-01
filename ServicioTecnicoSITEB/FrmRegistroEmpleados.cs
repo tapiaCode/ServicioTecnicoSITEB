@@ -200,7 +200,7 @@ namespace ServicioTecnicoSITEB
                 }
 
                 //Esconde columnas innecesarias
-                dataGridView1.Columns["Cargo"].Visible = false;
+                //dataGridView1.Columns["Cargo"].Visible = false;
             }
         }
 
