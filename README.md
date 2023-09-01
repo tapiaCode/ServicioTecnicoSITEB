@@ -22,7 +22,7 @@ Para empezar a usar el sistema, descarga o clona el código del repositorio de G
 
 primero deberas clonar de forma local la base de datos con todos los metodos correspondientes.
 
-para ello puedes descargar el backup del sgte enlace [BACKUP DATABASE]([enlacependiente.com](https://drive.google.com/file/d/1QSLSo1Lu0sNoe36MGaq3xWBvvF1njgbk/view?usp=drive_link)
+para ello puedes descargar el backup del sgte enlace [BACKUP DATABASE](https://drive.google.com/file/d/1QSLSo1Lu0sNoe36MGaq3xWBvvF1njgbk/view?usp=sharing)
 
 luego deberas establecer la conexion a la base de datos de manera local selecciona el app.config la capa de datos y elimina la cadena de conexion para luego agregar tu propia cadena local de forma manual, o mediante ADONET. que es un elemento nativo de .NET
 ```
