@@ -149,12 +149,18 @@ namespace ServicioTecnicoSITEB
             if (CargoEntreVentanas == "Administrador")
             {
                 //MessageBox.Show("Bienvenido Administrador");
+                btnRegistroCliente.Visible = true;
+                btnRegistroEmpleado.Visible = true;
+                btnRegistroUsuario.Visible = true;
+                btnInformes.Visible = true;
+
             }
             else if (CargoEntreVentanas == "Empleado")
             {
                 btnRegistroCliente.Visible = false;
                 btnRegistroEmpleado.Visible = false;
                 btnRegistroUsuario.Visible = false;
+                btnInformes.Visible = false;
             }
 
             //if (EditarEmpleado)

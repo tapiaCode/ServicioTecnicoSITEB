@@ -169,6 +169,7 @@ namespace ServicioTecnicoSITEB
         private void button1_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             RNUtilitarios.Utilitarios.TipodeReporte = 2;
             //Reportes.FrmReportes frmReporteNatural = new Reportes.FrmReportes();
             //frmReporteNatural.Show();
@@ -180,6 +181,16 @@ namespace ServicioTecnicoSITEB
 =======
  
 >>>>>>> 4df7faf (ok)
+||||||| 764752a
+            RNUtilitarios.Utilitarios.TipodeReporte = 2;
+            //Reportes.FrmReportes frmReporteNatural = new Reportes.FrmReportes();
+            //frmReporteNatural.Show();
+=======
+            Reportes.FrmRptCliente frmReporteCliente = new Reportes.FrmRptCliente();
+            //this.Hide();
+            frmReporteCliente.ShowDialog();
+            //this.Close();
+>>>>>>> facf897a91144fc58d7b96b8753cc946dadb7cb0
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
