@@ -1,6 +1,4 @@
-﻿using ServicioTecnicoSITEB.Datos;
-using ServicioTecnicoSITEB.Negocios;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,23 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ServicioTecnicoSITEB.Datos;
+using ServicioTecnicoSITEB.Negocios;
 
 namespace ServicioTecnicoSITEB
 {
-    public partial class FrmRegistroClientes : Form
+    public partial class FrmRegistroCliente : Form
     {
-        public FrmRegistroClientes()
+        public string CargoEntreVentanas { get; set; }
+        public FrmRegistroCliente()
         {
             InitializeComponent();
         }
-
-        private void FrmRegistroClientes_Load(object sender, EventArgs e)
-        {
-            this.GenerarIDCliente();
-            this.CargarComboRubro();
-            this.CargarComboZonaBarrio();
-        }
-
         private void GenerarIDCliente()
         {
             RNCtrlCliente ObjRNCliente = new RNCtrlCliente();
@@ -74,10 +67,92 @@ namespace ServicioTecnicoSITEB
             this.cbZona.DisplayMember = "Nombre_Barrio";
             this.cbZona.ValueMember = "Id_Barrio";
         }
+        private void LimpiarCuadrosTexto()
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textBox = (TextBox)control;
+                    textBox.Text = string.Empty; // Establece el texto del cuadro a una cadena vacía
+                }
+                else if (control is CheckBox)
+                {
+                    CheckBox checkBox = (CheckBox)control;
+                    checkBox.Checked = false; // Establece la propiedad Checked en false para el control CheckBox
+                }
+            }
+        }
+        //Validar campos
+        private bool ValidarCampo()
+        {
+            bool validar = true;
+            if (txtNombreCliente.Text == "")
+            {
+                validar = false;
+                errorNombreCliente.SetError(txtNombreCliente, "Ingrese el nombre");
+            }
+            if (txtApellidoPaterno.Text == "")
+            {
+                validar = false;
+                errorApellidoPaterno.SetError(txtApellidoPaterno, "Ingrese el apellido paterno");
+            }
+            if (txtApellidoMaterno.Text == "")
+            {
+                validar = false;
+                errorApellidoMaterno.SetError(txtApellidoMaterno, "Ingrese el apellido materno");
+            }
+            if (txtDocumentoIdentidad.Text == "")
+            {
+                validar = false;
+                errorCarnetIdentidad.SetError(txtDocumentoIdentidad, "Ingrese el carnet de identidad");
+            }
+            if (cbRubro.SelectedIndex == -1)
+            {
+                validar = false;
+                errorRubro.SetError(cbRubro, "Selecciona un rubro.");
+            }
+            if (txtTelefonoPersonal.Text == "")
+            {
+                validar = false;
+                errorTelefonoPersonal.SetError(txtTelefonoPersonal, "Ingrese su telefono personal");
+            }
+            if (txtTelefonoFijo.Text == "")
+            {
+                validar = false;
+                errorTelefonFijo.SetError(txtTelefonoFijo, "Ingrese el carnet de identidad");
+            }
+            if (txtEmailPersonal.Text == "")
+            {
+                validar = false;
+                errorEmaiPersonal.SetError(txtEmailPersonal, "Ingrese el carnet de identidad");
+            }
+            if (txtEmailCoorporativo.Text == "")
+            {
+                validar = false;
+                errorCorportativo.SetError(txtEmailCoorporativo, "Ingrese el carnet de identidad");
+            }
+            return validar;
+        }
+        //BorrarMensajesDeErro
+        private void BorrarErroProvider()
+        {
+            errorNombreCliente.SetError(txtNombreCliente, "");
+            errorApellidoPaterno.SetError(txtApellidoPaterno, "");
+            errorApellidoMaterno.SetError(txtApellidoMaterno, "");
+            errorCarnetIdentidad.SetError(txtDocumentoIdentidad, "");
+            errorRubro.SetError(cbRubro, "");
+
+            errorTelefonoPersonal.SetError(txtTelefonoPersonal, "");
+            errorTelefonFijo.SetError(txtTelefonoFijo, "");
+            errorEmaiPersonal.SetError(txtEmailPersonal, "");
+            errorCorportativo.SetError(txtEmailCoorporativo, "");
+        }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            if (ValidarCampos())
+            BorrarErroProvider();
+            if (ValidarCampo())
             {
                 RNCtrlCliente ObjRNCliente = new RNCtrlCliente();
                 Cliente ObjCliente = new Cliente();
@@ -121,82 +196,21 @@ namespace ServicioTecnicoSITEB
                 }
             }
         }
-        private void LimpiarCuadrosTexto()
+
+        private void BntCancelar_Click(object sender, EventArgs e)
         {
-            foreach (Control control in this.Controls)
-            {
-                if (control is TextBox)
-                {
-                    TextBox textBox = (TextBox)control;
-                    textBox.Text = string.Empty; // Establece el texto del cuadro a una cadena vacía
-                }
-                else if (control is CheckBox)
-                {
-                    CheckBox checkBox = (CheckBox)control;
-                    checkBox.Checked = false; // Establece la propiedad Checked en false para el control CheckBox
-                }
-            }
+            FrmMenu frmMenu = new FrmMenu();
+            frmMenu.CargoEntreVentanas = CargoEntreVentanas;
+            this.Hide();
+            frmMenu.ShowDialog();
+            this.Close();
         }
 
-        private bool cleanCampo(TextBox campo, string mensajeError)
+        private void FrmRegistroCliente_Load(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(campo.Text))
-            {
-                errorProvider1.SetError(campo, mensajeError);
-                return false;
-            }
-
-            errorProvider1.SetError(campo, ""); // Borrar el mensaje de error si el campo está lleno
-            return true;
-        }
-
-        private bool ValidarCampos()
-        {
-            bool todosLosCamposValidos = true;
-
-            todosLosCamposValidos &= cleanCampo(txtNombreCliente, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txtApellidoPaterno, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txtApellidoMaterno, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txtDocumentoIdentidad, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txtTelefonoPersonal, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txtEmailPersonal, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txtTelefonoFijo, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txtEmailCoorporativo, "Este Campo Es Requerido");
-
-            return todosLosCamposValidos;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-<<<<<<< HEAD
-            RNUtilitarios.Utilitarios.TipodeReporte = 2;
-            //Reportes.FrmReportes frmReporteNatural = new Reportes.FrmReportes();
-            //frmReporteNatural.Show();
-||||||| parent of 4df7faf (ok)
-            Reportes.FrmRptCliente frmReporteCliente = new Reportes.FrmRptCliente();
-            //this.Hide();
-            frmReporteCliente.ShowDialog();
-            //this.Close();
-=======
- 
->>>>>>> 4df7faf (ok)
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            RNCtrlCliente objRNCliente = new RNCtrlCliente();
-            if (this.txtBuscar.Text == "")
-            {
-                this.dataGridView1.DataSource = (objRNCliente.TrearClientes(0));
-                RNUtilitarios.Utilitarios.id = 0;
-            }
-            else
-            {
-                if (objRNCliente.TraerClientePorNombre(this.txtBuscar.Text).Count > 0)
-                {
-                    this.dataGridView1.DataSource = (objRNCliente.TraerClientePorNombre(this.txtBuscar.Text));
-                }
-            }
+            this.GenerarIDCliente();
+            this.CargarComboRubro();
+            this.CargarComboZonaBarrio();
         }
     }
 }

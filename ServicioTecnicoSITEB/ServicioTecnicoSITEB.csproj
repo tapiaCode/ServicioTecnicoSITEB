@@ -61,6 +61,7 @@
     <Compile Include="FrmEditarEmpleado.Designer.cs">
       <DependentUpon>FrmEditarEmpleado.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,19 @@
     </Compile>
     <Compile Include="FrmMainMenu.Designer.cs">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
+=======
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroCliente.Designer.cs">
+      <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
+>>>>>>> beimarCode
     </Compile>
     <Compile Include="FrmProductos.cs">
       <SubType>Form</SubType>
@@ -91,6 +105,7 @@
     <Compile Include="FrmRegistroEmpleados.Designer.cs">
       <DependentUpon>FrmRegistroEmpleados.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FrmRegistroPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,17 +117,108 @@
     </Compile>
     <Compile Include="FrmRegistroUsuario.Designer.cs">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+=======
+    <Compile Include="FrmRegistroProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroProducto.Designer.cs">
+      <DependentUpon>FrmRegistroProducto.cs</DependentUpon>
+>>>>>>> beimarCode
+    </Compile>
+    <Compile Include="FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+||||||| parent of 4df7faf (ok)
+    <Compile Include="Reportes\FrmRptCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptCliente.Designer.cs">
+      <DependentUpon>FrmRptCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptEmpleado.Designer.cs">
+      <DependentUpon>FrmRptEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptPedido.Designer.cs">
+      <DependentUpon>FrmRptPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptProducto.Designer.cs">
+      <DependentUpon>FrmRptProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Informes\Reportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Compile>
+=======
+<<<<<<< HEAD
+    <Compile Include="Reportes\FrmReporteCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmReporteCliente.Designer.cs">
+      <DependentUpon>FrmReporteCliente.cs</DependentUpon>
+=======
+    <Compile Include="Reportes\FrmRptCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptCliente.Designer.cs">
+      <DependentUpon>FrmRptCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptEmpleado.Designer.cs">
+      <DependentUpon>FrmRptEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptPedido.Designer.cs">
+      <DependentUpon>FrmRptPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRptProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRptProducto.Designer.cs">
+      <DependentUpon>FrmRptProducto.cs</DependentUpon>
+>>>>>>> tapiaCode
+    </Compile>
+    <Compile Include="Reportes\Informes\Reportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Compile>
+>>>>>>> 4df7faf (ok)
     <EmbeddedResource Include="FrmEditarEmpleado.resx">
       <DependentUpon>FrmEditarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroCliente.resx">
+      <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
+>>>>>>> beimarCode
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
@@ -123,11 +229,19 @@
     <EmbeddedResource Include="FrmRegistroEmpleados.resx">
       <DependentUpon>FrmRegistroEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmRegistroPedidos.resx">
       <DependentUpon>FrmRegistroPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroUsuario.resx">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmRegistroProducto.resx">
+      <DependentUpon>FrmRegistroProducto.cs</DependentUpon>
+>>>>>>> beimarCode
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,6 +253,49 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
+||||||| parent of 4df7faf (ok)
+    <EmbeddedResource Include="Reportes\FrmRptCliente.resx">
+      <DependentUpon>FrmRptCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptEmpleado.resx">
+      <DependentUpon>FrmRptEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptPedido.resx">
+      <DependentUpon>FrmRptPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptProducto.resx">
+      <DependentUpon>FrmRptProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Informes\ReporteCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReporteEmpleado.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReportePedido.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReporteProducto.rdlc" />
+=======
+<<<<<<< HEAD
+    <EmbeddedResource Include="Reportes\FrmReporteCliente.resx">
+      <DependentUpon>FrmReporteCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Informes\ReporteCliente.rdlc" />
+=======
+    <EmbeddedResource Include="Reportes\FrmRptCliente.resx">
+      <DependentUpon>FrmRptCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptEmpleado.resx">
+      <DependentUpon>FrmRptEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptPedido.resx">
+      <DependentUpon>FrmRptPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRptProducto.resx">
+      <DependentUpon>FrmRptProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Informes\ReporteCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReporteEmpleado.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReportePedido.rdlc" />
+    <EmbeddedResource Include="Reportes\Informes\ReporteProducto.rdlc" />
+>>>>>>> tapiaCode
+>>>>>>> 4df7faf (ok)
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -149,6 +306,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reportes\Informes\Reportes.xsc">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Informes\Reportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reportes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Informes\Reportes.xss">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -179,5 +347,13 @@
   <ItemGroup>
     <None Include="Resources\Smaller Network Connection Background.gif" />
   </ItemGroup>
+<<<<<<< HEAD
+||||||| parent of 4df7faf (ok)
+  <ItemGroup />
+=======
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+>>>>>>> 4df7faf (ok)
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

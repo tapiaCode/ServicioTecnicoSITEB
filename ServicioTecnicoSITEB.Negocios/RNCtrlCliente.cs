@@ -41,6 +41,10 @@ namespace ServicioTecnicoSITEB.Negocios
             }
 
         }
+<<<<<<< HEAD
+    }
+
+=======
         public List<Natural> TrearClientes(Int64 id)
         {
             if (id == 0)
@@ -62,4 +66,5 @@ namespace ServicioTecnicoSITEB.Negocios
             return result;
         }
     }
+>>>>>>> tapiaCode
 }

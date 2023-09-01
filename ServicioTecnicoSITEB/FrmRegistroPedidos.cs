@@ -278,5 +278,19 @@ namespace ServicioTecnicoSITEB
                 }
             }
         }
+<<<<<<< HEAD
+||||||| parent of 4df7faf (ok)
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Reportes.FrmRptPedido frmPedido = new Reportes.FrmRptPedido();
+            frmPedido.ShowDialog();
+        }
+=======
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+>>>>>>> 4df7faf (ok)
     }
 }

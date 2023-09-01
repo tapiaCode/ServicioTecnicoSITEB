@@ -1,7 +1,44 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
   <Profiles>
     <Profile Name="(Default)" />
   </Profiles>
   <Settings />
 </SettingsFile>
+||||||| parent of 4df7faf (ok)
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServicioTecnicoSITEB.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DBSITEPConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=TAPIA-PC\SQLEXPRESS;Initial Catalog=DBSITEP;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=TAPIA-PC\SQLEXPRESS;Initial Catalog=DBSITEP;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
+=======
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServicioTecnicoSITEB.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DBSITEPConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+<<<<<<< HEAD
+  &lt;ConnectionString&gt;Data Source=JHON-CRUZ;Initial Catalog=DBSITEP;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=JHON-CRUZ;Initial Catalog=DBSITEP;Integrated Security=True</Value>
+=======
+  &lt;ConnectionString&gt;Data Source=TAPIA-PC\SQLEXPRESS;Initial Catalog=DBSITEP;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=TAPIA-PC\SQLEXPRESS;Initial Catalog=DBSITEP;Integrated Security=True</Value>
+>>>>>>> tapiaCode
+    </Setting>
+  </Settings>
+</SettingsFile>
+>>>>>>> 4df7faf (ok)
