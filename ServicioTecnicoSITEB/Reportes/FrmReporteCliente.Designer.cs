@@ -1,6 +1,6 @@
 ﻿namespace ServicioTecnicoSITEB.Reportes
 {
-    partial class FrmRptPedido
+    partial class FrmReporteCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.generarInformePedidosGeneralesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.generateClienteReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportes = new ServicioTecnicoSITEB.Reportes.Informes.Reportes();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.generarInformePedidosGeneralesTableAdapter = new ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters.GenerarInformePedidosGeneralesTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.generarInformePedidosGeneralesBindingSource)).BeginInit();
+            this.generateClienteReportTableAdapter = new ServicioTecnicoSITEB.Reportes.Informes.ReportesTableAdapters.GenerateClienteReportTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.generateClienteReportBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportes)).BeginInit();
             this.SuspendLayout();
             // 
-            // generarInformePedidosGeneralesBindingSource
+            // generateClienteReportBindingSource
             // 
-            this.generarInformePedidosGeneralesBindingSource.DataMember = "GenerarInformePedidosGenerales";
-            this.generarInformePedidosGeneralesBindingSource.DataSource = this.reportes;
+            this.generateClienteReportBindingSource.DataMember = "GenerateClienteReport";
+            this.generateClienteReportBindingSource.DataSource = this.reportes;
             // 
             // reportes
             // 
@@ -51,31 +51,31 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "ReportePedidos";
-            reportDataSource2.Value = this.generarInformePedidosGeneralesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ServicioTecnicoSITEB.Reportes.Informes.ReportePedido.rdlc";
+            reportDataSource1.Name = "ReporteCliente";
+            reportDataSource1.Value = this.generateClienteReportBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ServicioTecnicoSITEB.Reportes.Informes.ReporteCliente.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1412, 771);
+            this.reportViewer1.Size = new System.Drawing.Size(814, 506);
             this.reportViewer1.TabIndex = 0;
             // 
-            // generarInformePedidosGeneralesTableAdapter
+            // generateClienteReportTableAdapter
             // 
-            this.generarInformePedidosGeneralesTableAdapter.ClearBeforeFill = true;
+            this.generateClienteReportTableAdapter.ClearBeforeFill = true;
             // 
-            // FrmRptPedido
+            // FrmReporteCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1412, 771);
+            this.ClientSize = new System.Drawing.Size(814, 506);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FrmRptPedido";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmRptPedido";
-            this.Load += new System.EventHandler(this.FrmRptPedido_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.generarInformePedidosGeneralesBindingSource)).EndInit();
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmReporteCliente";
+            this.Text = "FrmReporteCliente";
+            this.Load += new System.EventHandler(this.FrmReporteCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.generateClienteReportBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportes)).EndInit();
             this.ResumeLayout(false);
 
@@ -85,7 +85,7 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Informes.Reportes reportes;
-        private System.Windows.Forms.BindingSource generarInformePedidosGeneralesBindingSource;
-        private Informes.ReportesTableAdapters.GenerarInformePedidosGeneralesTableAdapter generarInformePedidosGeneralesTableAdapter;
+        private System.Windows.Forms.BindingSource generateClienteReportBindingSource;
+        private Informes.ReportesTableAdapters.GenerateClienteReportTableAdapter generateClienteReportTableAdapter;
     }
 }

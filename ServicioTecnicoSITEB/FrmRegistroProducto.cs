@@ -1,6 +1,4 @@
-﻿using ServicioTecnicoSITEB.Datos;
-using ServicioTecnicoSITEB.Negocios;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ServicioTecnicoSITEB.Datos;
+using ServicioTecnicoSITEB.Negocios;
 
 namespace ServicioTecnicoSITEB
 {
-    public partial class FrmProductos : Form
+    public partial class FrmRegistroProducto : Form
     {
-        public FrmProductos()
+        public string CargoEntreVentanas { get; set; }
+        public FrmRegistroProducto()
         {
             InitializeComponent();
         }
 
-        private void FrmProductos_Load(object sender, EventArgs e)
+        private void FrmRegistroProducto_Load(object sender, EventArgs e)
         {
             this.GenerarIDProducto();
             this.GenerarIDEjemplar();
@@ -27,10 +28,9 @@ namespace ServicioTecnicoSITEB
             this.CargarSubCategoria();
             this.CargarComboMarca();
         }
-
         private void GenerarIDProducto()
         {
-            RNCtrlProducto ObjRNCrlProducto = new RNCtrlProducto();
+            RNCrlProducto ObjRNCrlProducto = new RNCrlProducto();
 
             CodigoProducto.Text = ObjRNCrlProducto.GenerarID().ToString();
         }
@@ -49,10 +49,18 @@ namespace ServicioTecnicoSITEB
             cbCategoria.DisplayMember = "Nombre_Categoria";
             cbCategoria.ValueMember = "Id_Categoria";
         }
-        
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Categoria categoriaSeleccionada = (Categoria)cbCategoria.SelectedItem;
+            RNSubcategoria ObjRnSubCategoria = new RNSubcategoria();
+            List<Sub_Categoria> subcategoriasFiltradas = ObjRnSubCategoria.TraerSubCategoria(0).Where(s => s.IdCategoria == categoriaSeleccionada.Id_Categoria).ToList();
+            cbSubCategoria.DataSource = subcategoriasFiltradas;
+            cbSubCategoria.DisplayMember = "Nombre_SubCategoria";
+            cbSubCategoria.ValueMember = "Id_SubCategoria";
+        }
         private void CargarSubCategoria()
         {
-            RNSubCategoria ObjRnSubCategoria = new RNSubCategoria();
+            RNSubcategoria ObjRnSubCategoria = new RNSubcategoria();
             cbSubCategoria.DataSource = ObjRnSubCategoria.TraerSubCategoria(0);
             cbSubCategoria.DisplayMember = "Nombre_SubCategoria";
             cbSubCategoria.ValueMember = "Id_SubCategoria";
@@ -74,23 +82,76 @@ namespace ServicioTecnicoSITEB
             cbDesMarca.DisplayMember = "Descripcion_Marca";
             cbDesMarca.ValueMember = "Id_Marca";
         }
-
-        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        private void LimpiarCuadrosTexto()
         {
-            Categoria categoriaSeleccionada = (Categoria)cbCategoria.SelectedItem;
-            RNSubCategoria ObjRnSubCategoria = new RNSubCategoria();
-            List<Sub_Categoria> subcategoriasFiltradas = ObjRnSubCategoria.TraerSubCategoria(0).Where(s => s.IdCategoria == categoriaSeleccionada.Id_Categoria).ToList();
-            cbSubCategoria.DataSource = subcategoriasFiltradas;
-            cbSubCategoria.DisplayMember = "Nombre_SubCategoria";
-            cbSubCategoria.ValueMember = "Id_SubCategoria";
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textBox = (TextBox)control;
+                    textBox.Text = string.Empty; // Establece el texto del cuadro a una cadena vacía
+                }
+                else if (control is CheckBox)
+                {
+                    CheckBox checkBox = (CheckBox)control;
+                    checkBox.Checked = false; // Establece la propiedad Checked en false para el control CheckBox
+                }
+            }
+        }
+        //Validar campos
+        private bool ValidarCampo()
+        {
+            bool validar = true;
+            if (txNombreProducto.Text == "")
+            {
+                validar = false;
+                errorNombreProducto.SetError(txNombreProducto, "Ingrese el nombre del producto");
+            }
+            if (DescripcionProducto.Text == "")
+            {
+                validar = false;
+                errorDescripcionProducto.SetError(DescripcionProducto, "Ingrese la descripcion del producto");
+            }
+            if (txNroSerie.Text == "")
+            {
+                validar = false;
+                errorNroSerie.SetError(txNroSerie, "Ingrese el número de serie");
+            }
+            if (txDesNroSerie.Text == "")
+            {
+                validar = false;
+                errorDescripcionNroSerie.SetError(txDesNroSerie, "Ingrese la descripcion del número de serie");
+            }
+            int precio;
+            if (!int.TryParse(txPrecio.Text, out precio))
+            {
+                validar = false;
+                errorDescripcionNroSerie.SetError(txPrecio, "Ingrese un número en el campo de precio");
+            }
+            else if (precio <= 0)
+            {
+                validar = false;
+                errorDescripcionNroSerie.SetError(txPrecio, "Ingrese un precio válido mayor a cero");
+            }
+            return validar;
+        }
+        //BorrarMensajesDeErro
+        private void BorrarErroProvider()
+        {
+            errorNombreProducto.SetError(txNombreProducto, "");
+            errorDescripcionProducto.SetError(DescripcionProducto, "");
+            errorNroSerie.SetError(txNroSerie, "");
+            errorDescripcionNroSerie.SetError(txDesNroSerie, "");
+            errorPrecioProducto.SetError(txPrecio, "");
         }
 
-        private void BtnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardarProducto_Click(object sender, EventArgs e)
         {
-            if (ValidarCampos())
+            BorrarErroProvider();
+            if (ValidarCampo())
             {
                 //Guardando el Producto
-                RNCtrlProducto ObjRNCrlProducto = new RNCtrlProducto();
+                RNCrlProducto ObjRNCrlProducto = new RNCrlProducto();
                 Producto ObjProducto = new Producto();
                 ObjProducto.Id_Producto = ObjRNCrlProducto.GenerarID();
                 ObjProducto.Nombre_Producto = this.txNombreProducto.Text;
@@ -138,70 +199,13 @@ namespace ServicioTecnicoSITEB
             }
         }
 
-        private bool cleanCampo(TextBox campo, string mensajeError)
+        private void BntCancelar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(campo.Text))
-            {
-                errorProvider1.SetError(campo, mensajeError);
-                return false;
-            }
-
-            errorProvider1.SetError(campo, ""); // Borrar el mensaje de error si el campo está lleno
-            return true;
-        }
-
-        private bool ValidarCampos()
-        {
-            bool todosLosCamposValidos = true;
-
-            todosLosCamposValidos &= cleanCampo(txDesNroSerie, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txNombreProducto, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txNroSerie, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(txPrecio, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(CodigoEjemplar, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(CodigoProducto, "Este Campo Es Requerido");
-            todosLosCamposValidos &= cleanCampo(DescripcionProducto, "Este Campo Es Requerido");
-
-            return todosLosCamposValidos;
-        }
-        private void LimpiarCuadrosTexto()
-        {
-            foreach (Control control in this.Controls)
-            {
-                if (control is TextBox)
-                {
-                    TextBox textBox = (TextBox)control;
-                    textBox.Text = string.Empty; // Establece el texto del cuadro a una cadena vacía
-                }
-                else if (control is CheckBox)
-                {
-                    CheckBox checkBox = (CheckBox)control;
-                    checkBox.Checked = false; // Establece la propiedad Checked en false para el control CheckBox
-                }
-            }
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            RNProducto objRNProducto = new RNProducto();
-            if (this.txtBuscar.Text == "")
-            {
-                this.dataGridView1.DataSource = (objRNProducto.TraerProducto(0));
-                RNUtilitarios.Utilitarios.id = 0;
-            }
-            else
-            {
-                if (objRNProducto.TraerProductoPorNombre(this.txtBuscar.Text).Count > 0)
-                {
-                    this.dataGridView1.DataSource = (objRNProducto.TraerProductoPorNombre(this.txtBuscar.Text));
-                }
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Reportes.FrmRptProducto frmReporteProducto = new Reportes.FrmRptProducto();
-            frmReporteProducto.ShowDialog();
+            FrmMenu frmMenu = new FrmMenu();
+            this.Hide();
+            frmMenu.CargoEntreVentanas = CargoEntreVentanas;
+            frmMenu.ShowDialog();
+            this.Close();
         }
     }
 }

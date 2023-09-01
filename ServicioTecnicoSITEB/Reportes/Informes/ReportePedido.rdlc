@@ -657,7 +657,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="RptPedidos">
+    <DataSet Name="ReportePedidos">
       <Query>
         <DataSourceName>Reportes</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
