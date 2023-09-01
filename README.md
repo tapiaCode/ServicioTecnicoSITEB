@@ -32,13 +32,6 @@ luego deberas establecer la conexion a la base de datos de manera local seleccio
     <add name="DBSITEPEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=TAPIA-PC\SQLEXPRESS;initial catalog=DBSITEP;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
   </connectionStrings>
 ```
-## PARA HACERLO DE MANERA MANUAL 
-primero elimina el model en la capa de datos 
-![Alt text](/img//1.png?raw=true "PASO 1")
-
-Fuente: https://www.iteramos.com/pregunta/7578/como-anadir-capturas-de-pantalla-a-los-readmes-en-el-repositorio-de-github
-
-
 
 Recursos
 
